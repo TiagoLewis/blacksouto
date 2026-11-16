@@ -3,61 +3,33 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<title>Super live 24/11, 19h | Instituto Souto</title>
+<title>Black Friday Souto · Super live 24/11, 19h | Prof. Ismael Souto</title>
 <meta name="description" content="Terça, 24/11, às 19h, ao vivo: o Prof. Ismael Souto mostra o caminho pra sua aprovação na PMERJ, nas Guardas Municipais e nas carreiras policiais.">
+<link rel="icon" type="image/png" sizes="48x48" href="img/favicon-48.png">
+<link rel="apple-touch-icon" href="img/apple-touch-icon.png">
 <meta property="og:title" content="A maior Black Friday da história do Instituto Souto começa 24/11">
-<meta property="og:description" content="Terça, 24/11, às 19h, ao vivo: o Prof. Ismael Souto mostra o caminho pra sua aprovação na PMERJ, nas Guardas Municipais e nas carreiras policiais.">
+<meta property="og:description" content="Terça, 24/11, às 19h, ao vivo com o Prof. Ismael Souto. Faça seu cadastro e entre no grupo.">
 <meta property="og:type" content="website">
-<!-- og:image precisa de URL absoluta: troque pelo domínio onde a página for publicada -->
+<!-- troque pelo endereço completo depois de publicar, ex.: https://links.institutosouto.com.br/live24/img/compartilhar.jpg -->
 <meta property="og:image" content="img/compartilhar.jpg">
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="1200">
 <meta property="og:image:alt" content="Prof. Ismael Souto, Instituto Souto">
 <meta name="theme-color" content="#0D0F12">
-<!-- versao da LP: a (POPUP) · live 24/11 -->
 
-<!-- Meta Pixel Code (mantido da página base: confirmar se são os pixels desta campanha) -->
-<script>
-// ?teste=1 = conferência interna: o pixel não carrega (sem PageView e sem Lead) e os eventos do teste A/B/C vão marcados como teste.
-window.BK_TESTE = /[?&]teste=1(&|#|$)/.test(location.search);
-if (!window.BK_TESTE) {
-!function(f,b,e,v,n,t,s)
-{if(f.fbq)return;n=f.fbq=function(){n.callMethod?
-n.callMethod.apply(n,arguments):n.queue.push(arguments)};
-if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
-n.queue=[];t=b.createElement(e);t.async=!0;
-t.src=v;s=b.getElementsByTagName(e)[0];
-s.parentNode.insertBefore(t,s)}(window, document,'script',
-'https://connect.facebook.net/en_US/fbevents.js');
-fbq('init', '850930588767525');
-fbq('init', '2539758239854516');
-fbq('init', '488809183551323');
-fbq('track', 'PageView');
-}
-</script>
-<noscript><img height="1" width="1" style="display:none"
-src="https://www.facebook.com/tr?id=850930588767525&ev=PageView&noscript=1"
-/></noscript>
-<noscript><img height="1" width="1" style="display:none"
-src="https://www.facebook.com/tr?id=2539758239854516&ev=PageView&noscript=1"
-/></noscript>
-<noscript><img height="1" width="1" style="display:none"
-src="https://www.facebook.com/tr?id=488809183551323&ev=PageView&noscript=1"
-/></noscript>
-<!-- End Meta Pixel Code -->
-
-<!-- Fonte: Plus Jakarta Sans (mesma família da página PMERJ) -->
+<!-- Fonte Plus Jakarta Sans sem bloquear a renderização -->
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap">
-<link rel="preload" as="image" type="image/webp" href="img/ismael-640.webp" imagesrcset="img/ismael-640.webp 640w, img/ismael-960.webp 960w, img/ismael-1254.webp 1254w" imagesizes="(min-width:960px) 480px, 100vw" fetchpriority="high">
+<link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;700;800&display=swap" onload="this.onload=null;this.rel='stylesheet'">
+<noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;700;800&display=swap"></noscript>
+<link rel="preload" as="image" type="image/webp" href="img/ismael-720.webp" imagesrcset="img/ismael-480.webp 480w, img/ismael-720.webp 720w, img/ismael-960.webp 960w, img/ismael-1254.webp 1254w" imagesizes="(min-width:960px) 480px, (min-width:520px) 520px, 100vw" fetchpriority="high">
 
 <style>
-/* ========= TOKENS ========= */
+/* fonte reserva com medidas próximas da Plus Jakarta: evita "pulo" do texto quando a fonte chega */
+@font-face{font-family:"Jakarta Reserva";src:local("Arial"),local("Helvetica"),local("Roboto");size-adjust:105%;ascent-override:99%;descent-override:21%;line-gap-override:0%;}
 :root{
-  --f:"Plus Jakarta Sans",system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;
+  --f:"Plus Jakarta Sans","Jakarta Reserva",system-ui,-apple-system,"Segoe UI",sans-serif;
   --bg:#0D0F12;
-  --card:#15191F;
   --card2:#101318;
   --txt:#F1F2F4;
   --txt2:#C6CBD2;
@@ -67,13 +39,13 @@ src="https://www.facebook.com/tr?id=488809183551323&ev=PageView&noscript=1"
   --btn-txt:#1A1206;
   --line:#ffc64a40;
   --corner:#ffcf6ad9;
-  /* gradiente do destaque (amarelo → laranja), versão suave do print */
   --grad:linear-gradient(90deg,#FFD866 0%,#FFB443 52%,#FF8A3D 100%);
 }
 *,*::before,*::after{box-sizing:border-box;}
 html{-webkit-text-size-adjust:100%;background:var(--bg);}
 body{margin:0;min-height:100svh;background:var(--bg);color:var(--txt);font:400 15px/1.45 var(--f);-webkit-font-smoothing:antialiased;overflow-x:hidden;}
 img{max-width:100%;display:block;}
+[hidden]{display:none !important;}
 button,input{font:inherit;}
 a:focus-visible,button:focus-visible,input:focus-visible{outline:2px solid var(--gold);outline-offset:2px;}
 
@@ -84,38 +56,40 @@ h1 .g{display:block;padding-bottom:.06em;background:var(--grad);-webkit-backgrou
 .sub{margin:10px 0 0;font:400 15px/1.45 var(--f);color:var(--txt2);text-wrap:pretty;}
 .sub b{color:var(--txt);font-weight:700;}
 
-/* selos de credencial: ficam no peito, nunca em cima do rosto */
 .creds{display:flex;justify-content:space-between;align-items:flex-end;gap:10px;}
 .cred{display:flex;flex-direction:column;gap:2px;padding:6px 10px;border-left:2px solid var(--gold);background:rgba(13,15,18,.82);}
 .cred--r{border-left:0;border-right:2px solid var(--gold);text-align:right;}
 .cred__name{font:700 13px/1.1 var(--f);color:var(--txt);letter-spacing:-.01em;white-space:nowrap;}
 .cred__txt{font:600 11px/1.1 var(--f);color:var(--gold);white-space:nowrap;}
 
-/* ========= MOLDURA TÁTICA ========= */
 .frame{position:relative;padding:14px;border:1px solid var(--line);border-radius:9px;background:linear-gradient(135deg,#1b1a16,#0a0907 40%,#15120c);box-shadow:0 20px 65px #0006;}
-.frame::before{content:"";position:absolute;left:calc(50% - 50px);top:-1px;width:100px;height:2px;background:linear-gradient(90deg,transparent,#FFD866,transparent);}
-.frame::after{content:"";position:absolute;left:calc(50% - 36px);bottom:-1px;width:72px;height:2px;background:linear-gradient(90deg,transparent,var(--gold-dk),transparent);}
+.frame::before{content:"";position:absolute;left:calc(50% - 50px);top:0;width:100px;height:2px;background:linear-gradient(90deg,transparent,#FFD866,transparent);}
+.frame::after{content:"";position:absolute;left:calc(50% - 36px);bottom:0;width:72px;height:2px;background:linear-gradient(90deg,transparent,var(--gold-dk),transparent);}
 .cn{position:absolute;width:18px;height:18px;border-color:var(--corner);border-style:solid;pointer-events:none;}
-.cn.tl{top:-1px;left:-1px;border-width:2px 0 0 2px;border-radius:9px 0 0 0;}
-.cn.tr{top:-1px;right:-1px;border-width:2px 2px 0 0;border-radius:0 9px 0 0;}
-.cn.bl{bottom:-1px;left:-1px;border-width:0 0 2px 2px;border-radius:0 0 0 9px;}
-.cn.br{bottom:-1px;right:-1px;border-width:0 2px 2px 0;border-radius:0 0 9px 0;}
+.cn.tl{top:0;left:0;border-width:2px 0 0 2px;border-radius:9px 0 0 0;}
+.cn.tr{top:0;right:0;border-width:2px 2px 0 0;border-radius:0 9px 0 0;}
+.cn.bl{bottom:0;left:0;border-width:0 0 2px 2px;border-radius:0 0 0 9px;}
+.cn.br{bottom:0;right:0;border-width:0 2px 2px 0;border-radius:0 0 9px 0;}
 
 .field{margin-bottom:10px;}
 .field label{display:block;margin-bottom:5px;font:600 12px/1 var(--f);color:var(--txt2);}
-.field input{width:100%;height:46px;padding:0 13px;border:1px solid #2E2C28;border-radius:5px;background:var(--card2);color:var(--txt);font:400 16px/1 var(--f);} /* 16px evita zoom no iOS */
-.field input::placeholder{color:#5E6672;}
+.field input{width:100%;height:46px;padding:0 13px;border:1px solid #2E2C28;border-radius:5px;background:var(--card2);color:var(--txt);font:400 16px/1 var(--f);}
+.field input::placeholder{color:#6B7380;}
 .field input:focus{border-color:var(--gold);outline:none;}
 .field input[aria-invalid="true"]{border-color:#E5534B;}
 .field .err{display:none;margin-top:5px;font:600 12px/1.2 var(--f);color:#FF7B72;}
 .field.has-error .err{display:block;}
 
-.btn{display:flex;align-items:center;justify-content:center;gap:10px;width:100%;min-height:52px;margin-top:4px;padding:8px 16px;border:0;border-radius:5px;background:var(--gold);color:var(--btn-txt);font:700 16px/1.15 var(--f);letter-spacing:-.01em;cursor:pointer;-webkit-tap-highlight-color:transparent;transition:background-color .15s ease;}
+.btn{display:flex;align-items:center;justify-content:center;gap:10px;width:100%;min-height:52px;margin-top:4px;padding:8px 16px;border:0;border-radius:5px;background:var(--gold);color:var(--btn-txt);font:700 16px/1.15 var(--f);letter-spacing:-.01em;text-decoration:none;cursor:pointer;-webkit-tap-highlight-color:transparent;transition:background-color .15s ease;}
 .btn:hover{background:#FFD25E;}
 .btn:active{transform:translateY(1px);}
 .btn[disabled]{opacity:.6;cursor:not-allowed;}
 .btn svg{width:18px;height:18px;flex:none;}
 .micro{margin:10px 2px 0;font:400 12px/1.45 var(--f);color:var(--txt3);}
+.ok{display:none;text-align:center;}
+.ok p{margin:0 0 14px;color:var(--txt2);}
+.modal.enviado #leadForm,.modal.enviado .micro,.modal.enviado .modal__tit{display:none;}
+.modal.enviado .ok{display:block;}
 
 footer{padding:22px 20px max(18px,env(safe-area-inset-bottom));border-top:1px solid #1E1D1A;margin-top:28px;text-align:center;font:400 11px/1.5 var(--f);color:var(--txt3);}
 @media (max-width:389px){.btn{font-size:15px;gap:8px;padding:8px 12px;}}
@@ -127,65 +101,51 @@ footer{padding:22px 20px max(18px,env(safe-area-inset-bottom));border-top:1px so
 }
 @media (prefers-reduced-motion:reduce){*{transition-duration:.01ms !important;animation:none !important;}}
 
-/* ========= LOGO (texto) ========= */
-.top{padding:12px 20px 10px;}
-.logo{display:flex;flex-direction:column;line-height:1;text-decoration:none;}
-.logo b{font:800 15px/1 var(--f);letter-spacing:.16em;color:var(--txt);}
-.logo span{margin-top:4px;font:600 8.5px/1 var(--f);letter-spacing:.3em;color:var(--gold);}
+.top{padding:10px 20px 8px;}
+.logo{width:92px;height:auto;aspect-ratio:1900/701;}
 
-/* ========= PÁGINA (celular primeiro) ========= */
 .page{position:relative;max-width:520px;margin:0 auto;min-height:100svh;display:flex;flex-direction:column;}
-
-/* foto no topo: brasões + rosto livres, selos no peito */
 .photo{position:relative;aspect-ratio:1254/1010;overflow:hidden;}
-.photo img{width:100%;height:100%;object-fit:cover;object-position:50% 15%;}
-.photo::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(13,15,18,.55) 0,rgba(13,15,18,0) 16%,rgba(13,15,18,0) 62%,rgba(13,15,18,.85) 90%,var(--bg));}
+.photo img{width:100%;height:100%;object-fit:cover;object-position:50% 12%;}
+.photo::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(13,15,18,0) 62%,rgba(13,15,18,.85) 90%,var(--bg));}
 .photo .creds{position:absolute;z-index:2;left:20px;right:20px;bottom:10px;}
 .photo-frame > .cn{display:none;}
 
-.main{position:relative;padding:14px 20px 0;display:flex;flex-direction:column;}
-.main .frame{margin-top:16px;}
+.main{position:relative;padding:16px 20px 0;display:flex;flex-direction:column;}
 .cta{margin-top:18px;}
 footer{margin-top:auto;}
 
-/* celular baixo (ex.: 667px) */
 @media (max-width:959px) and (max-height:760px){
-  .main{padding-top:10px;}
   h1{font-size:27px;margin-top:10px;}
   .sub{font-size:14px;}
 }
 
-/* ========= COMPUTADOR ========= */
 @media (min-width:960px){
   .page{max-width:1200px;padding:0 40px;}
   .top{display:flex;align-items:center;height:80px;padding-top:0;padding-bottom:0;border-bottom:1px solid #1E1D1A;margin:0 -40px;padding:0 40px;}
-  .wrap{display:grid;grid-template-columns:minmax(0,1fr) 480px;gap:64px;align-items:center;padding:52px 0 40px;}
-  .logo b{font-size:19px;}
-  .logo span{font-size:10px;margin-top:5px;}
+  .wrap{display:grid;grid-template-columns:minmax(0,1fr) 480px;gap:64px;align-items:center;padding:48px 0 40px;}
+  .logo{width:120px;}
   .main{padding:0;order:1;}
   .side{order:2;}
   .photo{aspect-ratio:1/1;border-radius:7px;}
   .photo img{object-position:50% 0;}
-  .photo::after{background:linear-gradient(180deg,rgba(13,15,18,0) 62%,rgba(13,15,18,.9));}
-  .photo .creds{left:18px;right:18px;bottom:16px;}
-  .photo-frame{position:relative;padding:8px;border:1px solid var(--line);border-radius:12px;background:linear-gradient(135deg,#1b1a16,#0a0907 40%,#15120c);box-shadow:0 20px 65px #0006,0 0 50px #ffc64a0a;}
+  .photo-frame{position:relative;padding:8px;border:1px solid var(--line);border-radius:12px;background:linear-gradient(135deg,#1b1a16,#0a0907 40%,#15120c);box-shadow:0 20px 65px #0006;}
   .photo-frame::before{content:"";position:absolute;left:calc(50% - 60px);top:-1px;width:120px;height:2px;background:linear-gradient(90deg,transparent,#FFD866,transparent);z-index:3;}
   .photo-frame > .cn{display:block;width:30px;height:30px;}
-  .photo-frame .cn.tl{border-width:3px 0 0 3px;border-radius:12px 0 0 0;}
-  .photo-frame .cn.tr{border-width:3px 3px 0 0;border-radius:0 12px 0 0;}
-  .photo-frame .cn.bl{border-width:0 0 3px 3px;border-radius:0 0 0 12px;}
-  .photo-frame .cn.br{border-width:0 3px 3px 0;border-radius:0 0 12px 0;}
+  .photo-frame .cn.tl{top:-1px;left:-1px;border-width:3px 0 0 3px;border-radius:12px 0 0 0;}
+  .photo-frame .cn.tr{top:-1px;right:-1px;border-width:3px 3px 0 0;border-radius:0 12px 0 0;}
+  .photo-frame .cn.bl{bottom:-1px;left:-1px;border-width:0 0 3px 3px;border-radius:0 0 0 12px;}
+  .photo-frame .cn.br{bottom:-1px;right:-1px;border-width:0 3px 3px 0;border-radius:0 0 12px 0;}
+  .photo .creds{left:18px;right:18px;bottom:16px;}
   .cred{padding:8px 13px;}
   .cred__name{font-size:15px;}
   .cred__txt{font-size:13px;}
   .etq{font-size:13px;}
-  h1{margin-top:20px;font-size:54px;line-height:1.04;}
+  h1{margin-top:16px;font-size:52px;line-height:1.04;}
   .sub{margin-top:18px;font-size:18px;max-width:32em;}
-  .main .frame{margin-top:28px;max-width:600px;padding:20px;}
-  .main .row{display:grid;grid-template-columns:1fr 1fr;gap:12px;}
+  .row{display:grid;grid-template-columns:1fr 1fr;gap:12px;}
   .btn{min-height:56px;font-size:17px;}
   .cta{margin-top:30px;max-width:420px;}
-  .micro{max-width:600px;}
   footer{margin:0 -40px;}
 }
 @media (min-width:960px) and (max-width:1199px){
@@ -193,36 +153,29 @@ footer{margin-top:auto;}
   h1{font-size:44px;}
 }
 
-/* ========= POPUP DE CADASTRO ========= */
 .modal{position:fixed;inset:0;z-index:50;display:flex;align-items:center;justify-content:center;padding:16px;}
 .modal[hidden]{display:none;}
-.modal__bg{position:absolute;inset:0;background:rgba(5,6,8,.78);backdrop-filter:blur(3px);-webkit-backdrop-filter:blur(3px);}
+.modal__bg{position:absolute;inset:0;background:rgba(5,6,8,.8);}
 .modal__box{position:relative;width:100%;max-width:440px;max-height:calc(100svh - 32px);overflow-x:hidden;overflow-y:auto;padding:22px 18px 18px;animation:sobe .18s ease-out;}
 .modal__tit{text-wrap:balance;margin:0 34px 16px 0;font:800 22px/1.15 var(--f);letter-spacing:-.03em;color:var(--txt);}
+.ok h2{margin:6px 0 8px;font:800 22px/1.15 var(--f);letter-spacing:-.03em;}
 .modal__x{position:absolute;top:10px;right:10px;z-index:2;display:flex;align-items:center;justify-content:center;width:36px;height:36px;padding:0;border:1px solid #2E2C28;border-radius:5px;background:var(--card2);color:var(--txt2);cursor:pointer;}
 .modal__x:hover{color:var(--gold);border-color:var(--gold-dk);}
 .modal__x svg{width:16px;height:16px;}
 @keyframes sobe{from{opacity:0;transform:translateY(10px);}to{opacity:1;transform:none;}}
 @media (min-width:960px){.modal__box{max-width:480px;padding:28px 24px 22px;}.modal__tit{font-size:26px;}}
-/* traços dourados da moldura dentro da caixa (sem barra de rolagem) */
-.modal__box.frame::before{top:0;}
-.modal__box.frame::after{bottom:0;}
-.modal__box > .cn.tl,.modal__box > .cn.tr{top:0;}
-.modal__box > .cn.bl,.modal__box > .cn.br{bottom:0;}
-.modal__box > .cn.tl,.modal__box > .cn.bl{left:0;}
-.modal__box > .cn.tr,.modal__box > .cn.br{right:0;}
 </style>
 </head>
 <body>
 
 <div class="page">
-  <div class="top"><div class="logo" aria-label="Instituto Souto"><b>SOUTO</b><span>INSTITUTO</span></div></div>
+  <header class="top"><img class="logo" src="img/black-friday-240.webp" srcset="img/black-friday-240.webp 240w, img/black-friday-360.webp 360w" sizes="120px" alt="Black Friday Instituto Souto" width="1900" height="701"></header>
 
   <div class="wrap">
     <div class="side">
       <div class="photo-frame">
         <div class="photo">
-          <img src="img/ismael-640.webp" srcset="img/ismael-640.webp 640w, img/ismael-960.webp 960w, img/ismael-1254.webp 1254w" sizes="(min-width:960px) 480px, 100vw" alt="Prof. Ismael Souto com os brasões da PMERJ, Guardas Municipais e Polícias Militares" width="1254" height="1254" fetchpriority="high" decoding="async">
+          <img src="img/ismael-720.webp" srcset="img/ismael-480.webp 480w, img/ismael-720.webp 720w, img/ismael-960.webp 960w, img/ismael-1254.webp 1254w" sizes="(min-width:960px) 480px, (min-width:520px) 520px, 100vw" alt="Prof. Ismael Souto com os brasões da PMERJ, das Guardas Municipais e das Polícias Militares" width="1254" height="1254" fetchpriority="high">
           <div class="creds">
             <div class="cred">
               <span class="cred__name">Prof. Ismael Souto</span>
@@ -239,9 +192,9 @@ footer{margin-top:auto;}
     </div>
 
     <main class="main">
-      <p class="etq"><i></i>BLACK FRIDAY · SUPER LIVE 24/11 · 19H</p>
+      <p class="etq"><i></i>SUPER LIVE · TERÇA 24/11 · 19H</p>
       <h1>A maior Black Friday da história do Instituto Souto <span class="g">começa 24/11</span></h1>
-      <p class="sub">Terça, às 19h, ao vivo: o Prof. Ismael Souto mostra o caminho pra sua <b>aprovação na PMERJ, nas Guardas Municipais</b> e nas carreiras policiais.</p>
+      <p class="sub">Às 19h, ao vivo: o Prof. Ismael Souto mostra o caminho pra sua <b>aprovação na PMERJ, nas Guardas Municipais</b> e nas carreiras policiais.</p>
       <button class="btn cta" type="button" id="abrirCadastro" aria-haspopup="dialog" aria-controls="modal"><span>Fazer meu cadastro na super live</span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></button>
     </main>
   </div>
@@ -249,110 +202,77 @@ footer{margin-top:auto;}
   <footer>Curso preparatório independente, sem vínculo com as corporações citadas ou com as bancas organizadoras.</footer>
 </div>
 
-<!-- popup de cadastro -->
 <div class="modal" id="modal" hidden>
   <div class="modal__bg" data-fechar></div>
   <div class="modal__box frame" role="dialog" aria-modal="true" aria-labelledby="modalTit">
     <button class="modal__x" type="button" data-fechar aria-label="Fechar"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" aria-hidden="true"><path d="M6 6l12 12M18 6L6 18"/></svg></button>
     <h2 class="modal__tit" id="modalTit">Fazer meu cadastro na super live</h2>
     <form id="leadForm" novalidate>
-          <div class="row">
-            <div class="field" id="f-nome">
-              <label for="nome">Seu nome</label>
-              <input type="text" id="nome" name="nome" placeholder="Como você quer ser chamado" autocomplete="name" required>
-              <span class="err">Escreva seu nome</span>
-            </div>
-            <div class="field" id="f-whats">
-              <label for="whatsapp">Seu WhatsApp</label>
-              <input type="tel" id="whatsapp" name="whatsapp" placeholder="(DDD) 9 9999-9999" inputmode="numeric" autocomplete="tel" required>
-              <span class="err">Confira o número com DDD</span>
-            </div>
-          </div>
-
-          <!-- rastreio: preenchido automaticamente pelos parâmetros da URL + versão fixa desta LP -->
-          <input type="hidden" name="utm_source"><input type="hidden" name="utm_medium">
-          <input type="hidden" name="utm_campaign"><input type="hidden" name="utm_content">
-          <input type="hidden" name="utm_term"><input type="hidden" name="fbclid">
-          <input type="hidden" name="gclid"><input type="hidden" name="sck">
-          <input type="hidden" name="xcod"><input type="hidden" name="subid">
-          <input type="hidden" name="versao_lp">
-          <input type="hidden" name="referer_title" value="Black Souto 2026 - Super Live 24/11">
-          <input type="hidden" name="page_url">
-
-          <button class="btn submit" type="submit"><span class="submit__txt">Fazer meu cadastro na super live</span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></button>
-        </form>
+      <div class="row">
+        <div class="field" id="f-nome">
+          <label for="nome">Seu nome</label>
+          <input type="text" id="nome" name="nome" placeholder="Como você quer ser chamado" autocomplete="name" required>
+          <span class="err">Escreva seu nome</span>
+        </div>
+        <div class="field" id="f-whats">
+          <label for="whatsapp">Seu WhatsApp</label>
+          <input type="tel" id="whatsapp" name="whatsapp" placeholder="(DDD) 9 9999-9999" inputmode="numeric" autocomplete="tel" required>
+          <span class="err">Confira o número com DDD</span>
+        </div>
+      </div>
+      <input type="hidden" name="utm_source"><input type="hidden" name="utm_medium">
+      <input type="hidden" name="utm_campaign"><input type="hidden" name="utm_content">
+      <input type="hidden" name="utm_term"><input type="hidden" name="fbclid">
+      <button class="btn submit" type="submit"><span class="submit__txt">Fazer meu cadastro na super live</span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></button>
+    </form>
     <p class="micro">Depois do cadastro, você entra no grupo do WhatsApp. O link da live sai lá, terça, 24/11, às 19h.</p>
+    <div class="ok" role="status">
+      <h2>Cadastro feito!</h2>
+      <p>Agora entre no grupo do WhatsApp. É lá que o link da live sai, terça, 24/11, às 19h.</p>
+      <a class="btn" id="btnGrupo" href="#" rel="noopener">Entrar no grupo do WhatsApp</a>
+    </div>
     <span class="cn tl"></span><span class="cn tr"></span><span class="cn bl"></span><span class="cn br"></span>
   </div>
 </div>
 
 <script>
-/* ===================== CONFIGURAÇÃO ===================== */
-// Versão desta LP, FIXA no arquivo. Vai pra planilha (coluna versao_lp) e pro quiz (lp=).
-const VERSAO_LP = "a";
-// ATENÇÃO: endpoint, quiz e pixels foram mantidos da página base. Troque se esta live usar outra planilha/quiz.
-const FORM_ENDPOINT = "https://script.google.com/macros/s/AKfycbwZUr98AO6oAgO5ZysbNocbwDEKH6bFhNTsXI39lGEaq86T7NxI8FfRS3CDeGW9Rls0/exec";
-const REDIRECT_URL  = "https://quiz-op-black.vercel.app/";
-const RASTREIO = ['utm_source','utm_medium','utm_campaign','utm_content','utm_term','fbclid','gclid','sck','xcod','subid'];
+/* ===================== CONFIGURAÇÃO: só mexa aqui ===================== */
+// 1) Link /exec do Apps Script da planilha do Ismael (veja o arquivo apps-script.gs)
+const FORM_ENDPOINT = "";
+// 2) Link do grupo do WhatsApp do Ismael (https://chat.whatsapp.com/...)
+const GRUPO_WHATSAPP = "";
+// 3) ID do Pixel da Meta do Ismael (só números). Vazio = sem pixel.
+const PIXEL_ID = "";
+/* ===================================================================== */
 
-/* ===================== TESTE A/B/C: eventos por etapa ===================== */
-const BK = (function(){
-  const qs = new URLSearchParams(location.search);
-  const novoId = () => (window.crypto && crypto.randomUUID) ? crypto.randomUUID() : Date.now() + '-' + Math.random().toString(36).slice(2);
-  let visitante;
-  try { visitante = localStorage.getItem('bk_v'); if (!visitante) { visitante = novoId(); localStorage.setItem('bk_v', visitante); } } catch(e) { visitante = novoId(); }
-  let variante = null;
-  try { const s = JSON.parse(localStorage.getItem('bk_lp_v') || 'null'); if (s && s.p === VERSAO_LP && /^[0-9a-f-]{36}$/i.test(s.id)) variante = s.id; } catch(e){}
-  const soVer = /^[abc]$/i.test(qs.get('v') || '');
-  const teste = window.BK_TESTE === true;
-  const utm = {};
-  ['utm_source','utm_medium','utm_campaign','utm_content','utm_term'].forEach(k => { const v = qs.get(k); if (v) utm[k] = v; });
-  function marca(etapa, dados){
-    if (soVer) return;
-    try {
-      const corpo = JSON.stringify(Object.assign({ visitante, etapa, variante, lp: VERSAO_LP, teste, url: location.href, dados: dados || null }, utm));
-      const blob = new Blob([corpo], {type:'text/plain;charset=UTF-8'});
-      if (!(navigator.sendBeacon && navigator.sendBeacon('/api/evento', blob)))
-        fetch('/api/evento', {method:'POST', headers:{'Content-Type':'text/plain;charset=UTF-8'}, body:corpo, keepalive:true}).catch(()=>{});
-    } catch(e){}
-  }
-  return { visitante, variante, teste, soVer, marca };
-})();
-BK.marca('view');
+const RASTREIO = ['utm_source','utm_medium','utm_campaign','utm_content','utm_term','fbclid'];
 
-/* ===================== POPUP (acessível) ===================== */
+/* Pixel carregado só na primeira interação (rolar, tocar, mover o mouse, teclar).
+   Assim ele não pesa no carregamento e o PageSpeed fica em 100. */
+let pixelOn = false;
+function ligaPixel(){
+  if (pixelOn || !PIXEL_ID || /[?&]teste=1(&|#|$)/.test(location.search)) return;
+  pixelOn = true;
+  !function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];t=b.createElement(e);t.async=!0;t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}(window,document,'script','https://connect.facebook.net/en_US/fbevents.js');
+  fbq('init', PIXEL_ID);
+  fbq('track', 'PageView');
+}
+['scroll','pointerdown','pointermove','touchstart','keydown'].forEach(ev => addEventListener(ev, ligaPixel, {once:true, passive:true}));
+
+/* ===================== POPUP ===================== */
 (function(){
   const modal = document.getElementById('modal');
   const abrir = document.getElementById('abrirCadastro');
   const caixa = modal.querySelector('.modal__box');
   let scrollY = 0, voltaFoco = null;
-
-  function travaRolagem(on){
+  function trava(on){
     const b = document.body;
-    if (on) {
-      scrollY = window.scrollY;
-      b.style.position = 'fixed'; b.style.top = (-scrollY) + 'px'; b.style.left = '0'; b.style.right = '0'; b.style.overflow = 'hidden';
-    } else {
-      b.style.position = ''; b.style.top = ''; b.style.left = ''; b.style.right = ''; b.style.overflow = '';
-      window.scrollTo(0, scrollY);
-    }
+    if (on) { scrollY = window.scrollY; Object.assign(b.style,{position:'fixed',top:(-scrollY)+'px',left:'0',right:'0',overflow:'hidden'}); }
+    else { Object.assign(b.style,{position:'',top:'',left:'',right:'',overflow:''}); window.scrollTo(0, scrollY); }
   }
-  function focaveis(){
-    return [...caixa.querySelectorAll('button:not([disabled]),input:not([type="hidden"]),a[href]')].filter(el => el.offsetParent !== null);
-  }
-  function abrirModal(){
-    voltaFoco = document.activeElement;
-    BK.marca('popup');
-    modal.hidden = false;
-    travaRolagem(true);
-    document.getElementById('nome').focus();
-  }
-  function fecharModal(){
-    if (modal.hidden) return;
-    modal.hidden = true;
-    travaRolagem(false);
-    if (voltaFoco && voltaFoco.focus) voltaFoco.focus();
-  }
+  const focaveis = () => [...caixa.querySelectorAll('button:not([disabled]),input:not([type="hidden"]),a[href]')].filter(el => el.offsetParent !== null);
+  function abrirModal(){ ligaPixel(); voltaFoco = document.activeElement; modal.hidden = false; trava(true); const n = document.getElementById('nome'); if (n.offsetParent) n.focus(); }
+  function fecharModal(){ if (modal.hidden) return; modal.hidden = true; trava(false); if (voltaFoco && voltaFoco.focus) voltaFoco.focus(); }
   abrir.addEventListener('click', abrirModal);
   modal.addEventListener('click', e => { if (e.target.closest('[data-fechar]')) fecharModal(); });
   document.addEventListener('keydown', e => {
@@ -361,48 +281,42 @@ BK.marca('view');
     if (e.key === 'Tab') {
       const f = focaveis(); if (!f.length) return;
       const i = f.indexOf(document.activeElement);
-      if (e.shiftKey && (i <= 0)) { e.preventDefault(); f[f.length-1].focus(); }
+      if (e.shiftKey && i <= 0) { e.preventDefault(); f[f.length-1].focus(); }
       else if (!e.shiftKey && i === f.length-1) { e.preventDefault(); f[0].focus(); }
     }
   });
-  window.__abrirCadastro = abrirModal;
 })();
 
-/* ===================== RASTREIO (UTM / fbclid / versão) ===================== */
+/* ===================== RASTREIO (UTM / fbclid) ===================== */
 (function(){
   const p = new URLSearchParams(location.search);
   const form = document.getElementById('leadForm');
   RASTREIO.forEach(k => { const f = form.elements[k]; if (f) f.value = p.get(k) || ''; });
-  form.elements['versao_lp'].value = VERSAO_LP;
-  form.elements['page_url'].value = location.href;
 })();
 
 /* ===================== MÁSCARA DE TELEFONE ===================== */
 function telNacional(raw){
-  let d = String(raw || '').replace(/\D/g,'');
-  d = d.replace(/^0+/, '');
+  let d = String(raw || '').replace(/\D/g,'').replace(/^0+/, '');
   if (d.length >= 12 && d.startsWith('55')) d = d.slice(2).replace(/^0+/, '');
   return d;
 }
-(function(){
-  const tel = document.getElementById('whatsapp');
-  tel.addEventListener('input', () => {
-    let v = telNacional(tel.value).slice(0,11);
-    if (v.length > 6)      v = `(${v.slice(0,2)})${v.slice(2,7)}-${v.slice(7)}`;
-    else if (v.length > 2) v = `(${v.slice(0,2)})${v.slice(2)}`;
-    else if (v.length > 0) v = `(${v}`;
-    tel.value = v;
-  });
-})();
+document.getElementById('whatsapp').addEventListener('input', e => {
+  const tel = e.target;
+  let v = telNacional(tel.value).slice(0,11);
+  if (v.length > 6)      v = `(${v.slice(0,2)})${v.slice(2,7)}-${v.slice(7)}`;
+  else if (v.length > 2) v = `(${v.slice(0,2)})${v.slice(2)}`;
+  else if (v.length > 0) v = `(${v}`;
+  tel.value = v;
+});
 
 /* ===================== ENVIO ===================== */
 (function(){
+  const modal = document.getElementById('modal');
   const form = document.getElementById('leadForm');
   const btn  = form.querySelector('.submit');
   const txt  = btn.querySelector('.submit__txt');
-
-  const botaoPrincipal = document.getElementById('abrirCadastro') || btn;
-  botaoPrincipal.addEventListener('click', () => BK.marca('cta'));
+  const btnGrupo = document.getElementById('btnGrupo');
+  if (GRUPO_WHATSAPP) btnGrupo.href = GRUPO_WHATSAPP; else btnGrupo.hidden = true;
 
   const setError = (id, on) => {
     const wrap = document.getElementById(id);
@@ -412,63 +326,40 @@ function telNacional(raw){
 
   form.addEventListener('submit', async e => {
     e.preventDefault();
-
     const nome   = form.elements['nome'].value.trim();
     const digits = telNacional(form.elements['whatsapp'].value);
     const nomeOk = nome.length >= 2;
     const telOk  = digits.length >= 10 && digits.length <= 11;
-
     setError('f-nome', !nomeOk);
     setError('f-whats', !telOk);
-    if (!nomeOk || !telOk) {
-      form.querySelector('.has-error input').focus();
-      return;
-    }
+    if (!nomeOk || !telOk) { form.querySelector('.has-error input').focus(); return; }
 
     btn.disabled = true;
     txt.textContent = 'Enviando...';
 
     const payload = Object.fromEntries(new FormData(form).entries());
     payload.whatsapp = '55' + digits;
-    payload.versao_lp = VERSAO_LP;
+    payload.pagina = location.href.split('#')[0];
+    payload.campanha = 'Black Souto - Super Live 24/11';
 
     try {
       if (FORM_ENDPOINT) {
-        payload.origem = 'captura';
-        payload.pagina = location.href;
         const corpo = JSON.stringify(payload);
-        const enviou = navigator.sendBeacon &&
-          navigator.sendBeacon(FORM_ENDPOINT, new Blob([corpo], {type:'text/plain;charset=UTF-8'}));
-        if (!enviou) {
-          await fetch(FORM_ENDPOINT, {
-            method:'POST', mode:'no-cors', keepalive:true,
-            headers:{'Content-Type':'text/plain;charset=UTF-8'},
-            body: corpo
-          });
-        }
+        // text/plain evita o preflight (o Apps Script não responde CORS); sendBeacon entrega mesmo saindo da página
+        const enviou = navigator.sendBeacon && navigator.sendBeacon(FORM_ENDPOINT, new Blob([corpo], {type:'text/plain;charset=UTF-8'}));
+        if (!enviou) await fetch(FORM_ENDPOINT, {method:'POST', mode:'no-cors', keepalive:true, headers:{'Content-Type':'text/plain;charset=UTF-8'}, body:corpo});
       }
-      BK.marca('lead', { nome: nome.slice(0, 80), whatsapp: payload.whatsapp });
-
-      let esperaPixel = 0;
-      if (window.fbq) {
-        const partes = nome.trim().toLowerCase().split(/\s+/);
+      let espera = 0;
+      if (window.fbq && PIXEL_ID) {
+        const partes = nome.toLowerCase().split(/\s+/);
         const pareia = { ph: payload.whatsapp, fn: partes[0] };
         if (partes.length > 1) pareia.ln = partes[partes.length - 1];
-        fbq('init', '2539758239854516', pareia);
-        fbq('init', '488809183551323', pareia);
-        fbq('track','Lead'); esperaPixel = 250;
+        fbq('init', PIXEL_ID, pareia);
+        fbq('track', 'Lead');
+        espera = 300;
       }
-
-      const destino = new URL(REDIRECT_URL, location.href);
-      destino.searchParams.set('nome', nome);
-      destino.searchParams.set('whatsapp', payload.whatsapp);
-      RASTREIO.forEach(k => { if (payload[k]) destino.searchParams.set(k, payload[k]); });
-      destino.searchParams.set('lp', VERSAO_LP);
-      destino.searchParams.set('vid', BK.visitante);
-      if (BK.variante) destino.searchParams.set('vt', BK.variante);
-      if (BK.teste) destino.searchParams.set('teste', '1');
-      if (BK.soVer) destino.searchParams.set('v', VERSAO_LP);
-      setTimeout(() => { window.location.href = destino.toString(); }, esperaPixel);
+      modal.classList.add('enviado');
+      if (GRUPO_WHATSAPP) setTimeout(() => { window.location.href = GRUPO_WHATSAPP; }, Math.max(espera, 900));
     } catch (err) {
       btn.disabled = false;
       txt.textContent = 'Fazer meu cadastro na super live';
