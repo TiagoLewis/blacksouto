@@ -45,7 +45,6 @@
   button,input{font:inherit;color:inherit}
   [hidden]{display:none!important}
   :focus-visible{outline:2px solid var(--gold);outline-offset:3px}
-
   /* ============ BOTÃO (verde, pulsando, cursor "Você" clicando) ============ */
   .btn{position:relative;display:inline-flex;align-items:center;justify-content:center;gap:10px;min-height:56px;padding:17px 30px;border:0;border-radius:6px;cursor:pointer;text-decoration:none;
     background:linear-gradient(100deg,#2fe073 0%,#25d366 45%,#14a952 100%);color:#fff;text-shadow:0 1px 1px rgba(0,60,20,.25);
@@ -67,7 +66,6 @@
   .cur::before{content:"";position:absolute;left:4px;top:3px;width:10px;height:10px;margin:-5px 0 0 -5px;border-radius:50%;border:2px solid #ff6a1a;opacity:0;animation:clk 4.6s ease-out infinite}
   @keyframes cur{0%{transform:translate(70px,46px);opacity:0}12%{opacity:1}38%{transform:translate(0,0)}44%{transform:translate(0,0) scale(.86)}50%{transform:translate(0,0) scale(1)}72%{transform:translate(0,0);opacity:1}90%,100%{transform:translate(70px,46px);opacity:0}}
   @keyframes clk{0%,43%{opacity:0;transform:scale(.4)}45%{opacity:.9}62%,100%{opacity:0;transform:scale(3.2)}}
-
   /* ============ HERO (pegada da blacksouto) ============ */
   .page{max-width:1200px;margin:0 auto;padding:0 40px}
   .top{display:flex;align-items:center;height:80px;margin:0 -40px;padding:0 40px;border-bottom:1px solid #1e1d1a}
@@ -102,7 +100,6 @@
   .js-anim .hero .main>:nth-child(2){animation-delay:.08s}.js-anim .hero .main>:nth-child(3){animation-delay:.16s}.js-anim .hero .main>:nth-child(4){animation-delay:.24s}
   .js-anim .hero .side{animation:entra 1s var(--ease) .1s both}
   @keyframes entra{from{opacity:0;transform:translateY(14px)}to{opacity:1;transform:none}}
-
   /* ============ OS 7 CURSOS (estilo captação Angra, versão Black) ============ */
   .recebe{position:relative;padding:90px 0 100px;overflow:hidden;background:var(--bg);border-top:1px solid #1e1d1a}
   .mural{position:absolute;inset:-120px -40px;display:grid;grid-template-columns:repeat(6,1fr);gap:14px;opacity:.55;z-index:0}
@@ -149,8 +146,6 @@
   .recebe .centro{display:flex;flex-direction:column;align-items:center;margin-top:64px;text-align:center}
   .recebe .centro .nota{margin-bottom:22px;font-size:clamp(18px,2vw,22px);font-weight:400;letter-spacing:-.01em;color:#e9e9ed}
   .recebe .centro .nota b{font-weight:500}
-
-
   /* lista de cursos (estilo da Crisdoces) */
   .lista-oferta{position:relative;max-width:760px;margin:48px auto 0;padding:10px clamp(20px,4vw,40px) 8px;border-radius:20px;background:linear-gradient(180deg,rgba(28,24,18,.94),rgba(15,14,11,.95));border:1px solid rgba(255,198,74,.28);box-shadow:0 30px 80px rgba(0,0,0,.5),0 0 80px rgba(255,198,74,.07)}
   .lista-oferta ul{list-style:none;padding:0}
@@ -179,7 +174,6 @@
   .js-anim .bl{opacity:0;filter:blur(8px);transform:translateY(14px);transition:opacity 1s var(--ease),filter 1s var(--ease),transform 1s var(--ease)}
   .js-anim .rv.on,.js-anim .bl.on{opacity:1;filter:none;transform:none}
   .dl1{transition-delay:.12s!important}.dl2{transition-delay:.24s!important}.dl3{transition-delay:.36s!important}
-
   /* ============ PROFESSOR (igual Angra) ============ */
   .prof-w{position:relative;padding:76px 24px 10px;color:var(--ink-d);overflow:hidden;background:radial-gradient(ellipse 70% 60% at 50% 40%,var(--paper2) 0%,var(--paper) 70%)}
   .prof-w::before{content:"";position:absolute;inset:0;pointer-events:none;background-image:linear-gradient(rgba(17,18,22,.055) 1px,transparent 1px),linear-gradient(90deg,rgba(17,18,22,.055) 1px,transparent 1px);background-size:56px 56px;background-position:center;-webkit-mask-image:radial-gradient(ellipse 80% 70% at 50% 45%,#000 30%,transparent 100%);mask-image:radial-gradient(ellipse 80% 70% at 50% 45%,#000 30%,transparent 100%)}
@@ -214,34 +208,7 @@
   .lista{list-style:none;padding:0;display:grid;gap:7px;text-align:left}
   .lista li{display:flex;align-items:center;gap:10px;font-size:14.5px;font-weight:500;color:var(--ink-d)}
   .lista svg{flex:none;width:20px;height:20px}
-
   footer{padding:26px 20px max(30px,env(safe-area-inset-bottom));text-align:center;font-size:12.5px;line-height:1.5;letter-spacing:.02em;color:var(--mut-d);background:var(--paper);border-top:1px solid rgba(17,18,22,.08)}
-
-  /* ============ MODAL ============ */
-  .modal{position:fixed;inset:0;z-index:60;display:flex;align-items:center;justify-content:center;padding:16px}
-  .modal__bg{position:absolute;inset:0;background:rgba(5,6,8,.82);backdrop-filter:blur(3px);-webkit-backdrop-filter:blur(3px)}
-  .modal__box{position:relative;width:100%;max-width:470px;max-height:calc(100svh - 32px);overflow-y:auto;padding:28px 22px 20px;border-radius:14px;background:linear-gradient(160deg,#1b1a16,#0d0f12);border:1px solid var(--line);box-shadow:0 40px 100px -30px rgba(0,0,0,.9);animation:sobe .25s var(--ease)}
-  .modal__tit{margin:0 36px 6px 0;font:800 23px/1.15 var(--f);letter-spacing:-.03em}
-  .modal__sub{margin:0 0 18px;font-size:14.5px;line-height:1.45;color:var(--txt2)}
-  .modal__x{position:absolute;top:12px;right:12px;display:grid;place-items:center;width:36px;height:36px;border:1px solid #2e2c28;border-radius:8px;background:var(--card);color:var(--txt2);cursor:pointer}
-  .modal__x:hover{color:var(--gold);border-color:var(--gold-dk)}
-  .field{margin-bottom:12px}
-  .field label{display:block;margin-bottom:6px;font:600 14px/1.2 var(--f)}
-  .field input{width:100%;height:54px;padding:0 16px;border-radius:8px;border:1.5px solid #2e2c28;background:var(--card);font-size:17px;outline:none;transition:border-color .15s,box-shadow .15s}
-  .field input::placeholder{color:#6b7380}
-  .field input:focus{border-color:var(--gold);box-shadow:0 0 0 4px rgba(255,198,74,.14)}
-  .field .err{display:none;margin-top:6px;font-size:13px;color:#ff7b72}
-  .field.has-error input{border-color:#e5534b}.field.has-error .err{display:block}
-  .modal .btn{width:100%;margin-top:6px}
-  .micro{margin:12px 2px 0;font-size:12.5px;line-height:1.45;color:var(--txt3);text-align:center}
-  .ok{display:none;text-align:center}
-  .ok h2{margin:4px 0 8px;font:800 23px/1.15 var(--f);letter-spacing:-.03em}
-  .ok p{margin:0 0 16px;color:var(--txt2)}
-  .modal.enviado #leadForm,.modal.enviado .micro,.modal.enviado .modal__tit,.modal.enviado .modal__sub{display:none}
-  .modal.enviado .ok{display:block}
-  .btn[disabled]{opacity:.65;cursor:progress}
-  @keyframes sobe{from{opacity:0;transform:translateY(16px)}to{opacity:1;transform:none}}
-
   /* ============ RESPONSIVO ============ */
   @media (max-width:1199px) and (min-width:960px){.wrap{grid-template-columns:minmax(0,1fr) 440px;gap:44px}.hero h1{font-size:46px}}
   @media (max-width:959px){
@@ -292,7 +259,6 @@
 </style>
 </head>
 <body>
-
 <!-- ============ HERO ============ -->
 <div class="page hero">
   <header class="top"><img class="logo" src="img/black-friday-240.webp" srcset="img/black-friday-240.webp 240w, img/black-friday-360.webp 360w" sizes="120px" width="240" height="89" alt="Black Friday Instituto Souto"></header>
@@ -314,13 +280,12 @@
       <h1>7 cursos de preparação para carreiras policiais <span class="g">com preço revelado na&nbsp;live</span></h1>
       <p class="sub">PMERJ, Guardas Municipais e PM SP na <b>maior Black Friday da história do Instituto Souto</b>. Terça, 24/11, às 20h, o Prof. Ismael Souto abre a oferta ao vivo. Entre no grupo e receba o link da live.</p>
       <div class="cta">
-        <div class="btn-wrap"><button class="btn abrir" type="button" aria-haspopup="dialog" aria-controls="modal"><svg class="wa-ic" width="20" height="20" viewBox="0 0 24 24" aria-hidden="true"><use href="#wa"/></svg>Quero entrar no grupo da Black</button><span class="cur" aria-hidden="true"><svg width="20" height="20" viewBox="0 0 24 24"><use href="#seta"/></svg><b>Você</b></span></div>
+        <div class="btn-wrap"><a class="btn abrir" href="#" rel="noopener"><svg class="wa-ic" width="20" height="20" viewBox="0 0 24 24" aria-hidden="true"><use href="#wa"/></svg>Quero entrar no grupo da Black</a><span class="cur" aria-hidden="true"><svg width="20" height="20" viewBox="0 0 24 24"><use href="#seta"/></svg><b>Você</b></span></div>
         <p class="note"><i></i>Grupo 100% gratuito no WhatsApp</p>
       </div>
     </main>
   </div>
 </div>
-
 <!-- ============ OS 7 CURSOS ============ -->
 <section class="recebe" aria-labelledby="t-cursos">
   <div class="mural" id="mural" aria-hidden="true"></div>
@@ -345,11 +310,10 @@
     </div>
     <div class="centro">
       <p class="nota rv">O preço sai só na live. <b>Entre no grupo VIP e receba o link.</b></p>
-      <div class="btn-wrap rv dl1"><button class="btn abrir" type="button" aria-haspopup="dialog" aria-controls="modal"><svg class="wa-ic" width="20" height="20" viewBox="0 0 24 24" aria-hidden="true"><use href="#wa"/></svg>Quero entrar no grupo VIP</button><span class="cur" aria-hidden="true"><svg width="20" height="20" viewBox="0 0 24 24"><use href="#seta"/></svg><b>Você</b></span></div>
+      <div class="btn-wrap rv dl1"><a class="btn abrir" href="#" rel="noopener"><svg class="wa-ic" width="20" height="20" viewBox="0 0 24 24" aria-hidden="true"><use href="#wa"/></svg>Quero entrar no grupo VIP</a><span class="cur" aria-hidden="true"><svg width="20" height="20" viewBox="0 0 24 24"><use href="#seta"/></svg><b>Você</b></span></div>
     </div>
   </div>
 </section>
-
 <!-- ============ PROFESSOR ============ -->
 <div class="prof-w">
   <div class="notch" aria-hidden="true"><svg width="132" height="34" viewBox="0 0 132 34"><path d="M0 0H132C112 0 106 34 84 34H48C26 34 20 0 0 0Z" fill="#0d0f12"/><path class="ar" d="M66 9v13m-5-5 5 5 5-5" fill="none" stroke="#fff" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
@@ -360,7 +324,6 @@
       <svg class="arc" viewBox="0 0 300 300" aria-hidden="true"><defs><path id="ar1" d="M44,190 A110,110 0 0 1 128,42"/><path id="ar2" d="M172,42 A110,110 0 0 1 256,190"/></defs><text><textPath href="#ar1" startOffset="4%">Instituto Souto</textPath></text><text><textPath href="#ar2" startOffset="14%">Ismael Souto</textPath></text></svg>
       <div class="pf-foto"><img src="img/prof-ismael.webp" alt="Prof. Ismael Souto" width="720" height="900" loading="lazy"></div>
     </div>
-
     <div class="c">
       <div class="div"></div>
       <div class="prof-tit"><h2 id="t-prof"><span class="selecionado s1">Quem será seu&nbsp;</span><span class="selecionado s2">professor?</span></h2></div>
@@ -371,7 +334,7 @@
       </div>
       <div class="prof-foot">
         <div class="selo rv"><img src="img/black-friday-240.webp" alt="Black Friday Instituto Souto" width="240" height="89" loading="lazy"><div><small>Black Friday</small><b>Instituto<br>Souto</b></div></div>
-        <div class="btn-wrap rv dl1"><button class="btn abrir" type="button" aria-haspopup="dialog" aria-controls="modal"><svg class="wa-ic" width="20" height="20" viewBox="0 0 24 24" aria-hidden="true"><use href="#wa"/></svg>Quero entrar no grupo</button><span class="cur" aria-hidden="true"><svg width="20" height="20" viewBox="0 0 24 24"><use href="#seta"/></svg><b>Você</b></span></div>
+        <div class="btn-wrap rv dl1"><a class="btn abrir" href="#" rel="noopener"><svg class="wa-ic" width="20" height="20" viewBox="0 0 24 24" aria-hidden="true"><use href="#wa"/></svg>Quero entrar no grupo</a><span class="cur" aria-hidden="true"><svg width="20" height="20" viewBox="0 0 24 24"><use href="#seta"/></svg><b>Você</b></span></div>
         <ul class="lista rv dl2">
           <li><svg viewBox="0 0 24 24" fill="none" stroke="url(#gw)" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 11.5a8.4 8.4 0 0 1-12.4 7.4L3 21l2.1-5.4A8.4 8.4 0 1 1 21 11.5z"/></svg>Grupo gratuito no WhatsApp</li>
           <li><svg viewBox="0 0 24 24" fill="none" stroke="url(#gw)" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9.5"/><path d="M10 8.6v6.8l5.6-3.4z" fill="url(#gw)" stroke="none"/></svg>Super live 24/11 às 20h</li>
@@ -380,42 +343,7 @@
     </div>
   </section>
 </div>
-
-
 <footer>© <span id="ano">2026</span> INSTITUTO SOUTO • Curso preparatório independente, sem vínculo com as corporações citadas ou com as bancas organizadoras.</footer>
-
-<!-- ============ MODAL DE CADASTRO ============ -->
-<div class="modal" id="modal" hidden>
-  <div class="modal__bg" data-fechar></div>
-  <div class="modal__box" role="dialog" aria-modal="true" aria-labelledby="modalTit">
-    <button class="modal__x" type="button" data-fechar aria-label="Fechar"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" aria-hidden="true"><path d="M6 6l12 12M18 6L6 18"/></svg></button>
-    <h2 class="modal__tit" id="modalTit">Entrar no grupo da Black Souto</h2>
-    <p class="modal__sub">Preencha e você vai direto para o grupo do WhatsApp. O link da live sai lá, terça, 24/11, às 20h.</p>
-    <form id="leadForm" novalidate>
-      <div class="field" id="f-nome">
-        <label for="nome">Seu nome</label>
-        <input type="text" id="nome" name="nome" placeholder="Como você quer ser chamado" autocomplete="name" required>
-        <span class="err">Escreva seu nome</span>
-      </div>
-      <div class="field" id="f-whats">
-        <label for="whatsapp">Seu WhatsApp</label>
-        <input type="tel" id="whatsapp" name="whatsapp" placeholder="(DDD) 9 9999-9999" inputmode="numeric" autocomplete="tel" required>
-        <span class="err">Confira o número com DDD</span>
-      </div>
-      <input type="hidden" name="utm_source"><input type="hidden" name="utm_medium"><input type="hidden" name="utm_campaign">
-      <input type="hidden" name="utm_content"><input type="hidden" name="utm_term"><input type="hidden" name="fbclid">
-      <button class="btn submit" type="submit"><svg class="wa-ic" width="20" height="20" viewBox="0 0 24 24" aria-hidden="true"><use href="#wa"/></svg><span class="submit__txt">Entrar no grupo</span></button>
-    </form>
-    <p class="micro">Seus dados ficam só com o Instituto Souto.</p>
-    <div class="ok" role="status">
-      <h2>Cadastro feito!</h2>
-      <p>Abrindo o grupo do WhatsApp… Se não abrir sozinho, toque no botão.</p>
-      <a class="btn" id="btnGrupo" href="#" rel="noopener"><svg class="wa-ic" width="20" height="20" viewBox="0 0 24 24" aria-hidden="true"><use href="#wa"/></svg>Entrar no grupo do WhatsApp</a>
-    </div>
-  </div>
-</div>
-
-<!-- ícones reaproveitados -->
 <svg width="0" height="0" style="position:absolute" aria-hidden="true">
   <defs>
     <linearGradient id="gw" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#f0b000"/><stop offset="1" stop-color="#f0b000"/></linearGradient>
@@ -423,8 +351,6 @@
     <symbol id="seta" viewBox="0 0 24 24"><path d="M3.5 2.8 20 10.2l-7.1 2.2-2.7 7.3z" fill="#ff6a1a" stroke="#fff" stroke-width="1.6" stroke-linejoin="round"/></symbol>
   </defs>
 </svg>
-
-
 <svg width="0" height="0" style="position:absolute" aria-hidden="true">
   <defs>
     <linearGradient id="gw" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#f0b000"/><stop offset="1" stop-color="#f0b000"/></linearGradient>
@@ -432,20 +358,16 @@
     <symbol id="seta" viewBox="0 0 24 24"><path d="M3.5 2.8 20 10.2l-7.1 2.2-2.7 7.3z" fill="#ff6a1a" stroke="#fff" stroke-width="1.6" stroke-linejoin="round"/></symbol>
   </defs>
 </svg>
-
 <script>
 /* ===================== CONFIGURAÇÃO: só mexa aqui ===================== */
-// 1) Link do grupo do WhatsApp da Black (https://chat.whatsapp.com/...). Preenchido = todos os botões levam direto pro grupo, sem formulário.
+// 1) Link do grupo do WhatsApp da Black (https://chat.whatsapp.com/...): todos os botões levam direto pra ele
 const GRUPO_WHATSAPP = "";
-// 2) Link /exec do Apps Script da planilha (o mesmo da blacksouto). Vazio = não salva lead.
-const FORM_ENDPOINT = "";
-// 3) ID do Pixel da Meta (só números). Vazio = sem pixel.
+// 2) ID do Pixel da Meta (só números). Vazio = sem pixel.
 const PIXEL_ID = "";
 /* ===================================================================== */
 const VIDEO_BASE = "video/";
 const reduz = matchMedia("(prefers-reduced-motion: reduce)").matches;
 document.getElementById("ano").textContent = new Date().getFullYear();
-
 /* ---------- mural de artes desfocado (seção 2) ---------- */
 (function(){
   const B = n => "img/brasao-"+n+".webp";
@@ -461,7 +383,6 @@ document.getElementById("ano").textContent = new Date().getFullYear();
   document.getElementById("mural").innerHTML = [0,1,2,3,4,5].map(c =>
     '<div class="col" data-speed="'+vel[c]+'">'+P.filter((_,i)=>i%6===c).concat(P.filter((_,i)=>(i+2)%6===c),P.filter((_,i)=>(i+4)%6===c)).map(tile).join("")+'</div>').join("");
 })();
-
 /* ---------- anel de vídeos atrás do professor ---------- */
 (function(){
   const ring = document.getElementById("ring"), N = 8, palco = document.querySelector(".pf-palco");
@@ -487,7 +408,6 @@ document.getElementById("ano").textContent = new Date().getFullYear();
     if (e.isIntersecting && !on){ on = true; last = 0; requestAnimationFrame(orbit); } else if (!e.isIntersecting) on = false;
   }), {rootMargin:"200px 0px"}).observe(palco);
 })();
-
 /* ---------- revelar ao rolar ---------- */
 (function(){
   const alvos = document.querySelectorAll(".rv,.bl,.lista-oferta");
@@ -495,7 +415,6 @@ document.getElementById("ano").textContent = new Date().getFullYear();
   const io = new IntersectionObserver(es => es.forEach(e => { if (e.isIntersecting){ e.target.classList.add("on"); io.unobserve(e.target); } }), {rootMargin:"0px 0px -10% 0px"});
   alvos.forEach(el => io.observe(el));
 })();
-
 /* ---------- título do professor preenchendo + parallax do mural ---------- */
 (function(){
   const s1 = document.querySelector(".selecionado.s1"), s2 = document.querySelector(".selecionado.s2"), par = document.querySelectorAll("[data-speed]");
@@ -511,7 +430,6 @@ document.getElementById("ano").textContent = new Date().getFullYear();
   addEventListener("scroll", () => { if (!tk){ tk = true; requestAnimationFrame(() => { frame(); tk = false; }); } }, {passive:true});
   addEventListener("resize", frame); frame();
 })();
-
 /* ---------- pixel (carrega só na 1ª interação: PageSpeed 100) ---------- */
 let pixelOn = false;
 function ligaPixel(){
@@ -521,87 +439,14 @@ function ligaPixel(){
   fbq('init', PIXEL_ID); fbq('track', 'PageView');
 }
 ["scroll","pointerdown","pointermove","touchstart","keydown"].forEach(ev => addEventListener(ev, ligaPixel, {once:true, passive:true}));
-
-/* ---------- modal de cadastro ---------- */
-(function(){
-  const modal = document.getElementById("modal"), caixa = modal.querySelector(".modal__box"), form = document.getElementById("leadForm");
-  const btnGrupo = document.getElementById("btnGrupo");
-  if (GRUPO_WHATSAPP) btnGrupo.href = GRUPO_WHATSAPP;
-  let scrollY = 0, voltaFoco = null;
-  function trava(on){
-    const b = document.body;
-    if (on){ scrollY = window.scrollY; Object.assign(b.style,{position:"fixed",top:(-scrollY)+"px",left:"0",right:"0",overflow:"hidden"}); }
-    else { Object.assign(b.style,{position:"",top:"",left:"",right:"",overflow:""}); window.scrollTo(0, scrollY); }
-  }
-  function abrir(){
-    if (GRUPO_WHATSAPP){ ligaPixel(); if (window.fbq && PIXEL_ID) fbq("track","Lead"); setTimeout(() => { location.href = GRUPO_WHATSAPP; }, window.fbq && PIXEL_ID ? 250 : 0); return; }
-    ligaPixel(); voltaFoco = document.activeElement; modal.hidden = false; trava(true); if (matchMedia("(hover:hover)").matches) document.getElementById("nome").focus(); }
-  function fechar(){ if (modal.hidden) return; modal.hidden = true; trava(false); if (voltaFoco && voltaFoco.focus) voltaFoco.focus(); }
-  document.querySelectorAll(".abrir").forEach(b => b.addEventListener("click", abrir));
-  modal.addEventListener("click", e => { if (e.target.closest("[data-fechar]")) fechar(); });
-  document.addEventListener("keydown", e => {
-    if (modal.hidden) return;
-    if (e.key === "Escape"){ e.preventDefault(); fechar(); return; }
-    if (e.key === "Tab"){
-      const f = [...caixa.querySelectorAll('button:not([disabled]),input:not([type="hidden"]),a[href]')].filter(el => el.offsetParent !== null);
-      const i = f.indexOf(document.activeElement);
-      if (e.shiftKey && i <= 0){ e.preventDefault(); f[f.length-1].focus(); }
-      else if (!e.shiftKey && i === f.length-1){ e.preventDefault(); f[0].focus(); }
-    }
+/* ---------- botões: direto pro grupo do WhatsApp ---------- */
+document.querySelectorAll(".abrir").forEach(a => {
+  if (GRUPO_WHATSAPP) a.href = GRUPO_WHATSAPP;
+  a.addEventListener("click", e => {
+    if (!GRUPO_WHATSAPP){ e.preventDefault(); return; }
+    ligaPixel(); if (window.fbq && PIXEL_ID) fbq("track","Lead");
   });
-
-  // UTM / fbclid
-  const p = new URLSearchParams(location.search);
-  ["utm_source","utm_medium","utm_campaign","utm_content","utm_term","fbclid"].forEach(k => { const f = form.elements[k]; if (f) f.value = p.get(k) || ""; });
-
-  // máscara do telefone
-  function telNacional(raw){
-    let d = String(raw||"").replace(/\D/g,"").replace(/^0+/,"");
-    if (d.length >= 12 && d.startsWith("55")) d = d.slice(2).replace(/^0+/,"");
-    return d.slice(0,11);
-  }
-  const tel = document.getElementById("whatsapp");
-  tel.addEventListener("input", () => {
-    const d = telNacional(tel.value); let v = d;
-    if (d.length > 2) v = "(" + d.slice(0,2) + ") " + d.slice(2);
-    if (d.length > 7) v = "(" + d.slice(0,2) + ") " + d.slice(2, d.length-4) + "-" + d.slice(-4);
-    tel.value = v; document.getElementById("f-whats").classList.remove("has-error");
-  });
-  document.getElementById("nome").addEventListener("input", () => document.getElementById("f-nome").classList.remove("has-error"));
-
-  form.addEventListener("submit", async e => {
-    e.preventDefault();
-    const btn = form.querySelector(".submit"), txt = btn.querySelector(".submit__txt");
-    const nome = form.elements.nome.value.trim(), digits = telNacional(tel.value);
-    const nomeOk = nome.length >= 2, telOk = /^[1-9]{2}9\d{8}$/.test(digits) || /^[1-9]{2}[2-5]\d{7}$/.test(digits);
-    document.getElementById("f-nome").classList.toggle("has-error", !nomeOk);
-    document.getElementById("f-whats").classList.toggle("has-error", !telOk);
-    if (!nomeOk || !telOk){ form.querySelector(".has-error input").focus(); return; }
-    btn.disabled = true; txt.textContent = "Enviando...";
-    const payload = Object.fromEntries(new FormData(form).entries());
-    payload.whatsapp = "55" + digits;
-    payload.pagina = location.href.split("#")[0];
-    payload.campanha = "Black Souto - Captação Live 24/11 20h";
-    try {
-      if (FORM_ENDPOINT){
-        const corpo = JSON.stringify(payload);
-        const enviou = navigator.sendBeacon && navigator.sendBeacon(FORM_ENDPOINT, new Blob([corpo], {type:"text/plain;charset=UTF-8"}));
-        if (!enviou) await fetch(FORM_ENDPOINT, {method:"POST", mode:"no-cors", keepalive:true, headers:{"Content-Type":"text/plain;charset=UTF-8"}, body:corpo});
-      }
-      let espera = 0;
-      if (window.fbq && PIXEL_ID){
-        const partes = nome.toLowerCase().split(/\s+/), pareia = {ph:payload.whatsapp, fn:partes[0]};
-        if (partes.length > 1) pareia.ln = partes[partes.length-1];
-        fbq("init", PIXEL_ID, pareia); fbq("track", "Lead"); espera = 300;
-      }
-      modal.classList.add("enviado");
-      if (GRUPO_WHATSAPP) setTimeout(() => { location.href = GRUPO_WHATSAPP; }, Math.max(espera, 900));
-    } catch(err){
-      btn.disabled = false; txt.textContent = "Entrar no grupo";
-      alert("Não conseguimos enviar seu cadastro. Confira sua conexão e tente de novo.");
-    }
-  });
-})();
+});
 </script>
 </body>
 </html>
