@@ -1,369 +1,598 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="pt-BR">
 <head>
-<meta charset="UTF-8">
+<meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<title>Black Friday Souto · Super live 24/11, 19h | Prof. Ismael Souto</title>
-<meta name="description" content="Terça, 24/11, às 19h, ao vivo: o Prof. Ismael Souto mostra o caminho pra sua aprovação na PMERJ, nas Guardas Municipais e nas carreiras policiais.">
-<link rel="icon" type="image/png" sizes="48x48" href="img/favicon-48.png">
-<link rel="apple-touch-icon" href="img/apple-touch-icon.png">
-<meta property="og:title" content="A maior Black Friday da história do Instituto Souto começa 24/11">
-<meta property="og:description" content="Terça, 24/11, às 19h, ao vivo com o Prof. Ismael Souto. Faça seu cadastro e entre no grupo.">
+<title>Black Friday Souto · Super live 24/11, 20h | Prof. Ismael Souto</title>
+<meta name="description" content="A maior Black Friday da história do Instituto Souto: 7 cursos para PMERJ, Guardas Municipais e PM SP. O preço será revelado na super live de terça, 24/11, às 20h. Entre no grupo do WhatsApp.">
+<meta name="theme-color" content="#0d0f12">
 <meta property="og:type" content="website">
-<!-- troque pelo endereço completo depois de publicar, ex.: https://links.institutosouto.com.br/live24/img/compartilhar.jpg -->
+<meta property="og:title" content="A maior Black Friday da história do Instituto Souto começa 24/11">
+<meta property="og:description" content="Terça, 24/11, às 20h, ao vivo com o Prof. Ismael Souto. Entre no grupo do WhatsApp.">
 <meta property="og:image" content="img/compartilhar.jpg">
-<meta property="og:image:width" content="1200">
-<meta property="og:image:height" content="1200">
-<meta property="og:image:alt" content="Prof. Ismael Souto, Instituto Souto">
-<meta name="theme-color" content="#0D0F12">
-
-<!-- Fonte Plus Jakarta Sans sem bloquear a renderização -->
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;700;800&display=swap" onload="this.onload=null;this.rel='stylesheet'">
-<noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;700;800&display=swap"></noscript>
-<link rel="preload" as="image" type="image/webp" href="img/ismael-720.webp" imagesrcset="img/ismael-480.webp 480w, img/ismael-720.webp 720w, img/ismael-960.webp 960w, img/ismael-1254.webp 1254w" imagesizes="(min-width:960px) 480px, (min-width:520px) 520px, 100vw" fetchpriority="high">
-
+<link rel="icon" href="img/favicon-48.png" sizes="48x48" type="image/png">
+<link rel="apple-touch-icon" href="img/apple-touch-icon.png">
+<link rel="preload" href="fonts/InterDisplay-ExtraBold.woff" as="font" type="font/woff" crossorigin>
+<link rel="preload" href="fonts/InterDisplay-Regular.woff" as="font" type="font/woff" crossorigin>
+<link rel="preload" as="image" type="image/webp" href="img/ismael-720.webp" imagesrcset="img/ismael-480.webp 480w, img/ismael-720.webp 720w, img/ismael-960.webp 960w, img/ismael-1254.webp 1254w" imagesizes="(min-width:960px) 560px, 100vw" fetchpriority="high">
+<script>if (!matchMedia('(prefers-reduced-motion: reduce)').matches) document.documentElement.classList.add('js-anim');</script>
 <style>
-/* fonte reserva com medidas próximas da Plus Jakarta: evita "pulo" do texto quando a fonte chega */
-@font-face{font-family:"Jakarta Reserva";src:local("Arial"),local("Helvetica"),local("Roboto");size-adjust:105%;ascent-override:99%;descent-override:21%;line-gap-override:0%;}
-:root{
-  --f:"Plus Jakarta Sans","Jakarta Reserva",system-ui,-apple-system,"Segoe UI",sans-serif;
-  --bg:#0D0F12;
-  --card2:#101318;
-  --txt:#F1F2F4;
-  --txt2:#C6CBD2;
-  --txt3:#8F97A3;
-  --gold:#FFC64A;
-  --gold-dk:#D99A2B;
-  --btn-txt:#1A1206;
-  --line:#ffc64a40;
-  --corner:#ffcf6ad9;
-  --grad:linear-gradient(90deg,#FFD866 0%,#FFB443 52%,#FF8A3D 100%);
-}
-*,*::before,*::after{box-sizing:border-box;}
-html{-webkit-text-size-adjust:100%;background:var(--bg);}
-body{margin:0;min-height:100svh;background:var(--bg);color:var(--txt);font:400 15px/1.45 var(--f);-webkit-font-smoothing:antialiased;overflow-x:hidden;}
-img{max-width:100%;display:block;}
-[hidden]{display:none !important;}
-button,input{font:inherit;}
-a:focus-visible,button:focus-visible,input:focus-visible{outline:2px solid var(--gold);outline-offset:2px;}
+  @font-face{font-family:"Inter Display";src:url(fonts/InterDisplay-Light.woff) format("woff");font-weight:300;font-display:swap}
+  @font-face{font-family:"Inter Display";src:url(fonts/InterDisplay-Regular.woff) format("woff");font-weight:400;font-display:swap}
+  @font-face{font-family:"Inter Display";src:url(fonts/InterDisplay-Medium.woff) format("woff");font-weight:500;font-display:swap}
+  @font-face{font-family:"Inter Display";src:url(fonts/InterDisplay-SemiBold.woff) format("woff");font-weight:600;font-display:swap}
+  @font-face{font-family:"Inter Display";src:url(fonts/InterDisplay-ExtraBold.woff) format("woff");font-weight:700 800;font-display:swap}
+  @font-face{font-family:"Inter Reserva";src:local("Arial"),local("Helvetica");size-adjust:102%}
+  :root{
+    --bg:#0d0f12;--card:#101318;--txt:#f1f2f4;--txt2:#c6cbd2;--txt3:#8f97a3;
+    --gold:#ffc64a;--gold-dk:#d99a2b;--line:#ffc64a40;--corner:#ffcf6ad9;
+    --grad:linear-gradient(90deg,#ffc64a,#ffc64a);
+    --grad2:linear-gradient(90deg,#ffc64a,#ffc64a);
+    --grad-btn:linear-gradient(90deg,#ffc64a,#ffc64a);
+    --line2:rgba(255,255,255,.14);--gray:#9a9ca8;--soft:#c8c9d0;
+    --paper:#ededeb;--paper2:#f6f6f4;--ink-d:#111216;--mut-d:#5c5f69;
+    --f:"Inter Display","Inter Reserva","Helvetica Neue",Arial,sans-serif;
+    --ease:cubic-bezier(.22,.7,.2,1);
+  }
+  *,*::before,*::after{box-sizing:border-box}
+  html{background:var(--bg);-webkit-text-size-adjust:100%}
+  body{margin:0;background:var(--bg);color:var(--txt);font:400 16px/1.5 var(--f);-webkit-font-smoothing:antialiased;overflow-x:hidden}
+  img{max-width:100%;height:auto;display:block}
+  h1,h2,h3,p,ul{margin:0}
+  button,input{font:inherit;color:inherit}
+  [hidden]{display:none!important}
+  :focus-visible{outline:2px solid var(--gold);outline-offset:3px}
 
-.etq{display:flex;align-items:center;gap:9px;margin:0;font:700 11px/1 var(--f);letter-spacing:.14em;text-transform:uppercase;color:var(--gold);white-space:nowrap;}
-.etq i{display:block;width:6px;height:6px;border:1px solid var(--gold);transform:rotate(45deg);flex:none;}
-h1{margin:12px 0 0;font:800 31px/1.06 var(--f);letter-spacing:-.035em;color:var(--txt);}
-h1 .g{display:block;padding-bottom:.06em;background:var(--grad);-webkit-background-clip:text;background-clip:text;color:transparent;-webkit-text-fill-color:transparent;}
-.sub{margin:10px 0 0;font:400 15px/1.45 var(--f);color:var(--txt2);text-wrap:pretty;}
-.sub b{color:var(--txt);font-weight:700;}
+  /* ============ BOTÃO (verde, pulsando, cursor "Você" clicando) ============ */
+  .btn{position:relative;display:inline-flex;align-items:center;justify-content:center;gap:10px;min-height:56px;padding:17px 30px;border:0;border-radius:6px;cursor:pointer;text-decoration:none;
+    background:linear-gradient(100deg,#2fe073 0%,#25d366 45%,#14a952 100%);color:#fff;text-shadow:0 1px 1px rgba(0,60,20,.25);
+    font:500 15px/1.2 var(--f);letter-spacing:.03em;text-transform:uppercase;box-shadow:0 10px 28px -12px rgba(37,211,102,.6);
+    transition:transform .35s var(--ease),box-shadow .35s var(--ease),filter .35s;animation:brilho 2.6s ease-in-out infinite}
+  .btn svg{transition:transform .35s var(--ease)}
+  .btn:hover{transform:translateY(-2px);filter:brightness(1.04);box-shadow:0 16px 34px -12px rgba(37,211,102,.75)}
+  .btn .wa-ic{flex:none;filter:drop-shadow(0 1px 1px rgba(0,60,20,.25))}
+  .btn:hover .wa-ic{transform:rotate(-8deg) scale(1.06)}
+  .btn::after{content:"";position:absolute;inset:0;border-radius:inherit;pointer-events:none;animation:pisca 2.6s ease-out infinite}
+  .btn-wrap{position:relative;display:inline-block;max-width:100%}
+  .btn-wrap .btn{animation:press 4.6s var(--ease) infinite,brilho 2.6s ease-in-out infinite}
+  @keyframes pisca{0%{box-shadow:0 0 0 0 rgba(37,211,102,.5)}70%,100%{box-shadow:0 0 0 12px rgba(37,211,102,0)}}
+  @keyframes brilho{50%{filter:brightness(1.08) saturate(1.05)}}
+  @keyframes press{0%,42%,52%,100%{transform:none}46%{transform:scale(.975)}}
+  .cur{position:absolute;left:80%;top:64%;z-index:3;display:flex;align-items:flex-start;gap:2px;pointer-events:none;animation:cur 4.6s var(--ease) infinite}
+  .cur svg{filter:drop-shadow(0 3px 5px rgba(0,0,0,.25))}
+  .cur b{margin-top:15px;font:600 11px/1.3 var(--f);letter-spacing:.02em;color:#fff;background:#ff6a1a;padding:3px 9px;border-radius:99px 99px 99px 4px;box-shadow:0 6px 14px -6px rgba(255,74,38,.7);white-space:nowrap}
+  .cur::before{content:"";position:absolute;left:4px;top:3px;width:10px;height:10px;margin:-5px 0 0 -5px;border-radius:50%;border:2px solid #ff6a1a;opacity:0;animation:clk 4.6s ease-out infinite}
+  @keyframes cur{0%{transform:translate(70px,46px);opacity:0}12%{opacity:1}38%{transform:translate(0,0)}44%{transform:translate(0,0) scale(.86)}50%{transform:translate(0,0) scale(1)}72%{transform:translate(0,0);opacity:1}90%,100%{transform:translate(70px,46px);opacity:0}}
+  @keyframes clk{0%,43%{opacity:0;transform:scale(.4)}45%{opacity:.9}62%,100%{opacity:0;transform:scale(3.2)}}
 
-.creds{display:flex;justify-content:space-between;align-items:flex-end;gap:10px;}
-.cred{display:flex;flex-direction:column;gap:2px;padding:6px 10px;border-left:2px solid var(--gold);background:rgba(13,15,18,.82);}
-.cred--r{border-left:0;border-right:2px solid var(--gold);text-align:right;}
-.cred__name{font:700 13px/1.1 var(--f);color:var(--txt);letter-spacing:-.01em;white-space:nowrap;}
-.cred__txt{font:600 11px/1.1 var(--f);color:var(--gold);white-space:nowrap;}
+  /* ============ HERO (pegada da blacksouto) ============ */
+  .page{max-width:1200px;margin:0 auto;padding:0 40px}
+  .top{display:flex;align-items:center;height:80px;margin:0 -40px;padding:0 40px;border-bottom:1px solid #1e1d1a}
+  .logo{width:120px;height:auto}
+  .wrap{display:grid;grid-template-columns:minmax(0,1fr) 520px;gap:64px;align-items:center;padding:56px 0 64px}
+  .main{order:1}.side{order:2}
+  .etq{display:flex;align-items:center;gap:9px;font:700 13px/1 var(--f);letter-spacing:.14em;text-transform:uppercase;color:var(--gold);white-space:nowrap}
+  .etq i{display:block;width:6px;height:6px;border:1px solid var(--gold);transform:rotate(45deg);flex:none}
+  .hero h1{margin-top:16px;font:800 54px/1.04 var(--f);letter-spacing:-.04em;color:var(--txt)}
+  .hero h1 .g{display:block;padding-bottom:.06em;background:var(--grad);-webkit-background-clip:text;background-clip:text;color:transparent}
+  .hero .sub{margin-top:18px;max-width:32em;font-size:19px;line-height:1.45;color:var(--txt2);text-wrap:pretty}
+  .hero .sub b{color:var(--txt);font-weight:600}
+  .hero .cta{margin-top:30px}
+  .note{display:flex;align-items:center;gap:8px;margin-top:14px;font-size:13px;color:var(--txt3)}
+  .note i{width:7px;height:7px;border-radius:50%;background:#1faa59}
+  .frame{position:relative;padding:8px;border:1px solid var(--line);border-radius:12px;background:linear-gradient(135deg,#1b1a16,#0a0907 40%,#15120c);box-shadow:0 20px 65px #0006}
+  .frame::before{content:"";position:absolute;left:calc(50% - 60px);top:-1px;z-index:3;width:120px;height:2px;background:linear-gradient(90deg,transparent,#ffd866,transparent)}
+  .cn{position:absolute;width:30px;height:30px;border-color:var(--corner);border-style:solid;pointer-events:none}
+  .cn.tl{top:-1px;left:-1px;border-width:3px 0 0 3px;border-radius:12px 0 0 0}
+  .cn.tr{top:-1px;right:-1px;border-width:3px 3px 0 0;border-radius:0 12px 0 0}
+  .cn.bl{bottom:-1px;left:-1px;border-width:0 0 3px 3px;border-radius:0 0 0 12px}
+  .cn.br{bottom:-1px;right:-1px;border-width:0 3px 3px 0;border-radius:0 0 12px 0}
+  .photo{position:relative;aspect-ratio:1/1;border-radius:7px;overflow:hidden}
+  .photo img{width:100%;height:100%;object-fit:cover;object-position:50% 0}
+  .photo::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(13,15,18,0) 66%,rgba(13,15,18,.8) 92%,var(--bg))}
+  .creds{position:absolute;z-index:2;left:18px;right:18px;bottom:16px;display:flex;justify-content:space-between;align-items:flex-end;gap:10px}
+  .cred{display:flex;flex-direction:column;gap:3px;padding:8px 13px;border-left:2px solid var(--gold);background:rgba(13,15,18,.82)}
+  .cred--r{border-left:0;border-right:2px solid var(--gold);text-align:right}
+  .cred b{font:700 15px/1.1 var(--f);letter-spacing:-.01em;white-space:nowrap}
+  .cred span{font:600 13px/1.1 var(--f);color:var(--gold);white-space:nowrap}
+  .js-anim .hero .main>*{animation:entra .8s var(--ease) both}
+  .js-anim .hero .main>:nth-child(2){animation-delay:.08s}.js-anim .hero .main>:nth-child(3){animation-delay:.16s}.js-anim .hero .main>:nth-child(4){animation-delay:.24s}
+  .js-anim .hero .side{animation:entra 1s var(--ease) .1s both}
+  @keyframes entra{from{opacity:0;transform:translateY(14px)}to{opacity:1;transform:none}}
 
-.frame{position:relative;padding:14px;border:1px solid var(--line);border-radius:9px;background:linear-gradient(135deg,#1b1a16,#0a0907 40%,#15120c);box-shadow:0 20px 65px #0006;}
-.frame::before{content:"";position:absolute;left:calc(50% - 50px);top:0;width:100px;height:2px;background:linear-gradient(90deg,transparent,#FFD866,transparent);}
-.frame::after{content:"";position:absolute;left:calc(50% - 36px);bottom:0;width:72px;height:2px;background:linear-gradient(90deg,transparent,var(--gold-dk),transparent);}
-.cn{position:absolute;width:18px;height:18px;border-color:var(--corner);border-style:solid;pointer-events:none;}
-.cn.tl{top:0;left:0;border-width:2px 0 0 2px;border-radius:9px 0 0 0;}
-.cn.tr{top:0;right:0;border-width:2px 2px 0 0;border-radius:0 9px 0 0;}
-.cn.bl{bottom:0;left:0;border-width:0 0 2px 2px;border-radius:0 0 0 9px;}
-.cn.br{bottom:0;right:0;border-width:0 2px 2px 0;border-radius:0 0 9px 0;}
+  /* ============ OS 7 CURSOS (estilo captação Angra, versão Black) ============ */
+  .recebe{position:relative;padding:90px 0 100px;overflow:hidden;background:var(--bg);border-top:1px solid #1e1d1a}
+  .mural{position:absolute;inset:-120px -40px;display:grid;grid-template-columns:repeat(6,1fr);gap:14px;opacity:.55;z-index:0}
+  .col{display:grid;gap:14px;align-content:start;will-change:transform}
+  .col:nth-child(even){margin-top:-110px}
+  .post{position:relative;aspect-ratio:4/5;border-radius:10px;overflow:hidden;background:#101219;border:1px solid rgba(255,255,255,.04)}
+  .post>img{width:100%;height:100%;object-fit:cover;filter:grayscale(.3) brightness(.6)}
+  .post .pt{position:absolute;left:12px;right:12px;bottom:12px;font:500 clamp(13px,1.3vw,19px)/1.1 var(--f);letter-spacing:-.01em}
+  .post .pt em{font-style:normal;color:#ffc64a}
+  .post.t{display:flex;align-items:center;justify-content:center;text-align:center;padding:14px}
+  .post.t .pt{position:static}
+  .post.ouro{background:linear-gradient(160deg,#3a2a0c,#0f0b05)}
+  .post.verm{background:linear-gradient(160deg,#3a0a0e,#0f0507)}
+  .post.br{display:grid;place-items:center;background:radial-gradient(circle at 50% 45%,rgba(255,198,74,.16),transparent 65%),#120f0a}
+  .post.br img{width:62%;height:auto;object-fit:contain;filter:brightness(.75)}
+  .veil{position:absolute;inset:0;z-index:1;pointer-events:none;backdrop-filter:blur(4px);-webkit-backdrop-filter:blur(4px);
+    background:radial-gradient(ellipse 60% 60% at 50% 50%,rgba(13,15,18,.9),rgba(13,15,18,.72)),linear-gradient(180deg,var(--bg) 0%,transparent 14%,transparent 86%,var(--bg) 100%)}
+  .c{position:relative;z-index:2;max-width:1100px;margin:0 auto;padding:0 24px}
+  .tit{text-align:center;font:500 clamp(32px,4vw,50px)/1.08 var(--f);letter-spacing:-.04em}
+  .dgw{color:#e9e9ed}
+  .dgb{background:var(--grad2);-webkit-background-clip:text;background-clip:text;color:transparent}
+  .sub2{margin:16px auto 0;max-width:600px;text-align:center;font-size:17px;line-height:1.55;color:var(--gray)}
+  .cursos{display:grid;grid-template-columns:1fr 1fr;gap:56px 40px;margin-top:56px}
+  .thumb{position:relative;aspect-ratio:16/9;border-radius:12px;overflow:hidden;background:radial-gradient(ellipse at 76% 50%,rgba(255,198,74,.2),transparent 60%),#0b0c11;box-shadow:0 0 0 1px var(--line2),0 30px 60px -30px rgba(0,0,0,.9)}
+  .thumb::before{content:"";position:absolute;right:-10%;top:50%;width:62%;aspect-ratio:1;transform:translateY(-50%);border-radius:50%;border:1px solid rgba(255,198,74,.18);box-shadow:0 0 60px rgba(255,198,74,.12) inset}
+  .thumb .num{position:absolute;left:24px;top:16px;z-index:2;font:300 clamp(56px,6vw,86px)/1 var(--f);letter-spacing:-.05em;background:var(--grad2);-webkit-background-clip:text;background-clip:text;color:transparent}
+  .thumb .crest{position:absolute;right:10%;top:50%;z-index:2;height:66%;width:auto;transform:translateY(-50%) scale(.9);opacity:0;filter:drop-shadow(0 14px 22px rgba(0,0,0,.6));transition:transform 1.1s var(--ease) .2s,opacity 1.1s var(--ease) .2s}
+  .thumb.on .crest,html:not(.js-anim) .thumb .crest{transform:translateY(-50%);opacity:1}
+  .thumb.on .crest{animation:flutua 5s ease-in-out 1.3s infinite}
+  @keyframes flutua{0%,100%{translate:0 0}50%{translate:0 -6px}}
+  .thumb .lbl{position:absolute;left:26px;bottom:22px;z-index:2;max-width:52%}
+  .thumb .lbl small{display:block;font-size:11.5px;letter-spacing:.22em;text-transform:uppercase;color:var(--gray)}
+  .thumb .lbl strong{display:block;margin-top:6px;font:500 clamp(24px,2.5vw,32px)/1.05 var(--f);letter-spacing:-.025em}
+  .preco-card .thumb{background:radial-gradient(ellipse at 50% 120%,rgba(255,74,38,.25),transparent 60%),radial-gradient(ellipse at 76% 40%,rgba(255,198,74,.2),transparent 60%),#0b0c11}
+  .preco-card .num{font-size:clamp(64px,7.4vw,104px)}
+  .ao-vivo{position:absolute;right:22px;top:22px;z-index:2;display:inline-flex;align-items:center;gap:8px;padding:6px 12px;border-radius:99px;background:rgba(255,255,255,.06);border:1px solid var(--line2);font:600 11.5px/1 var(--f);letter-spacing:.14em;text-transform:uppercase;color:#fff}
+  .ao-vivo i{width:7px;height:7px;border-radius:50%;background:#ff3b30;animation:vivo 1.6s ease-out infinite}
+  @keyframes vivo{0%{box-shadow:0 0 0 0 rgba(255,59,48,.6)}70%,100%{box-shadow:0 0 0 8px rgba(255,59,48,0)}}
+  .pill{display:inline-flex;align-items:center;gap:12px;margin-top:22px;background:rgba(255,255,255,.05);border:1px solid var(--line2);border-radius:99px;padding:4px 18px 4px 4px}
+  .pill .dt{display:inline-flex;align-items:center;gap:8px;background:var(--grad-btn);color:#1a0904;font-weight:500;font-size:13.5px;border-radius:99px;padding:6px 13px 6px 6px}
+  .pill .dt svg{flex:none}
+  .pill p{font-size:12px;letter-spacing:.08em;text-transform:uppercase;color:var(--soft)}
+  .curso p.t{margin-top:14px;font-size:16px;line-height:1.6;color:var(--gray)}
+  .recebe .centro{display:flex;flex-direction:column;align-items:center;margin-top:64px;text-align:center}
+  .recebe .centro .nota{margin-bottom:22px;font-size:clamp(18px,2vw,22px);font-weight:400;letter-spacing:-.01em;color:#e9e9ed}
+  .recebe .centro .nota b{font-weight:500}
 
-.field{margin-bottom:10px;}
-.field label{display:block;margin-bottom:5px;font:600 12px/1 var(--f);color:var(--txt2);}
-.field input{width:100%;height:46px;padding:0 13px;border:1px solid #2E2C28;border-radius:5px;background:var(--card2);color:var(--txt);font:400 16px/1 var(--f);}
-.field input::placeholder{color:#6B7380;}
-.field input:focus{border-color:var(--gold);outline:none;}
-.field input[aria-invalid="true"]{border-color:#E5534B;}
-.field .err{display:none;margin-top:5px;font:600 12px/1.2 var(--f);color:#FF7B72;}
-.field.has-error .err{display:block;}
 
-.btn{display:flex;align-items:center;justify-content:center;gap:10px;width:100%;min-height:52px;margin-top:4px;padding:8px 16px;border:0;border-radius:5px;background:var(--gold);color:var(--btn-txt);font:700 16px/1.15 var(--f);letter-spacing:-.01em;text-decoration:none;cursor:pointer;-webkit-tap-highlight-color:transparent;transition:background-color .15s ease;}
-.btn:hover{background:#FFD25E;}
-.btn:active{transform:translateY(1px);}
-.btn[disabled]{opacity:.6;cursor:not-allowed;}
-.btn svg{width:18px;height:18px;flex:none;}
-.micro{margin:10px 2px 0;font:400 12px/1.45 var(--f);color:var(--txt3);}
-.ok{display:none;text-align:center;}
-.ok p{margin:0 0 14px;color:var(--txt2);}
-.modal.enviado #leadForm,.modal.enviado .micro,.modal.enviado .modal__tit{display:none;}
-.modal.enviado .ok{display:block;}
+  /* lista de cursos (estilo da Crisdoces) */
+  .lista-oferta{position:relative;max-width:760px;margin:48px auto 0;padding:10px clamp(20px,4vw,40px) 8px;border-radius:20px;background:linear-gradient(180deg,rgba(28,24,18,.94),rgba(15,14,11,.95));border:1px solid rgba(255,198,74,.28);box-shadow:0 30px 80px rgba(0,0,0,.5),0 0 80px rgba(255,198,74,.07)}
+  .lista-oferta ul{list-style:none;padding:0}
+  .lista-oferta li{display:flex;align-items:center;gap:14px;padding:13px 0;font:700 clamp(16px,1.7vw,19px)/1.25 var(--f);letter-spacing:-.01em}
+  .lista-oferta li img{flex:none;width:40px;height:40px;object-fit:contain;filter:drop-shadow(0 3px 6px rgba(0,0,0,.5))}
+  .lista-oferta li .nm small{display:block;margin-bottom:2px;font:600 10.5px/1.2 var(--f);letter-spacing:.18em;text-transform:uppercase;color:var(--txt3)}
+  .lista-oferta li .pontos{flex:1;min-width:20px;border-bottom:2px dotted rgba(255,210,140,.22);transform:translateY(7px)}
+  .lista-oferta li .val{flex:none;font-weight:800;color:var(--gold);white-space:nowrap}
+  .preco-bloq{display:flex;align-items:center;justify-content:space-between;gap:16px;flex-wrap:wrap;margin-top:6px;padding:22px 0 18px;border-top:1px solid rgba(255,198,74,.25)}
+  .pb-txt small{display:block;font:600 11px/1.2 var(--f);letter-spacing:.18em;text-transform:uppercase;color:var(--txt3)}
+  .pb-txt strong{display:block;margin-top:4px;font:500 clamp(22px,2.6vw,30px)/1.1 var(--f);letter-spacing:-.03em}
+  .pb-valor{display:flex;flex-direction:column;align-items:flex-end;gap:8px}
+  .borrado{font:800 clamp(44px,6vw,68px)/1 var(--f);letter-spacing:-.04em;background:var(--grad);-webkit-background-clip:text;background-clip:text;color:transparent;filter:blur(11px);user-select:none;pointer-events:none;animation:respira 2.6s ease-in-out infinite}
+  @keyframes respira{50%{filter:blur(14px);opacity:.85}}
+  .cadeado{display:inline-flex;align-items:center;gap:7px;padding:6px 12px;border-radius:99px;background:var(--grad-btn);color:#1a0904;font:600 12.5px/1 var(--f);letter-spacing:.02em}
+  .js-anim .lista-oferta li{opacity:0;transform:translateX(-16px);transition:opacity .45s ease,transform .45s ease;transition-delay:calc(var(--i,0) * 70ms + .2s)}
+  .js-anim .lista-oferta.on li{opacity:1;transform:none}
+  @media (max-width:767px){
+    .lista-oferta li{gap:10px;padding:11px 0;font-size:15.5px}
+    .lista-oferta li img{width:34px;height:34px}
+    .preco-bloq{flex-direction:column;align-items:center;text-align:center}
+    .pb-valor{align-items:center}
+  }
+  /* revelar ao rolar (igual Angra) */
+  .js-anim .rv{opacity:0;transform:translateY(22px);transition:opacity .9s var(--ease),transform .9s var(--ease)}
+  .js-anim .bl{opacity:0;filter:blur(8px);transform:translateY(14px);transition:opacity 1s var(--ease),filter 1s var(--ease),transform 1s var(--ease)}
+  .js-anim .rv.on,.js-anim .bl.on{opacity:1;filter:none;transform:none}
+  .dl1{transition-delay:.12s!important}.dl2{transition-delay:.24s!important}.dl3{transition-delay:.36s!important}
 
-footer{padding:22px 20px max(18px,env(safe-area-inset-bottom));border-top:1px solid #1E1D1A;margin-top:28px;text-align:center;font:400 11px/1.5 var(--f);color:var(--txt3);}
-@media (max-width:389px){.btn{font-size:15px;gap:8px;padding:8px 12px;}}
-@media (max-width:359px){
-  h1{font-size:27px;}
-  .etq{font-size:10px;letter-spacing:.1em;}
-  .cred__name{font-size:12px;}
-  .cred__txt{font-size:10px;}
-}
-@media (prefers-reduced-motion:reduce){*{transition-duration:.01ms !important;animation:none !important;}}
+  /* ============ PROFESSOR (igual Angra) ============ */
+  .prof-w{position:relative;padding:76px 24px 10px;color:var(--ink-d);overflow:hidden;background:radial-gradient(ellipse 70% 60% at 50% 40%,var(--paper2) 0%,var(--paper) 70%)}
+  .prof-w::before{content:"";position:absolute;inset:0;pointer-events:none;background-image:linear-gradient(rgba(17,18,22,.055) 1px,transparent 1px),linear-gradient(90deg,rgba(17,18,22,.055) 1px,transparent 1px);background-size:56px 56px;background-position:center;-webkit-mask-image:radial-gradient(ellipse 80% 70% at 50% 45%,#000 30%,transparent 100%);mask-image:radial-gradient(ellipse 80% 70% at 50% 45%,#000 30%,transparent 100%)}
+  .notch{position:absolute;left:50%;top:-1px;margin-left:-66px;z-index:6;line-height:0}
+  .notch .ar{animation:dn 1.8s ease-in-out infinite}
+  @keyframes dn{0%,100%{transform:translateY(0)}50%{transform:translateY(3px)}}
+  .prof{position:relative;max-width:1100px;margin:0 auto}
+  .prof-bg{position:absolute;left:50%;top:40px;width:640px;height:420px;margin-left:-320px;border-radius:50%;background:radial-gradient(closest-side,rgba(255,198,74,.2),transparent);z-index:0}
+  .pf-palco{position:relative;z-index:1;height:470px}
+  .pf-foto{position:absolute;left:50%;top:0;width:380px;margin-left:-190px;z-index:50;height:430px;border-radius:18px;overflow:hidden;box-shadow:0 40px 70px -35px rgba(17,18,22,.55),0 0 0 1px rgba(17,18,22,.06)}
+  .pf-foto img{width:100%;height:100%;object-fit:cover;object-position:center 12%}
+  .arc{position:absolute;z-index:55;left:50%;top:22px;width:300px;height:300px;margin-left:-150px;pointer-events:none}
+  .arc text{font-family:var(--f);font-size:10px;font-weight:500;letter-spacing:.24em;fill:rgba(255,255,255,.85);text-transform:uppercase}
+  .ring-w{position:absolute;left:50%;top:215px;width:0;height:0}
+  .ring .vc{position:absolute;left:-100px;top:-60px;width:200px;height:120px;border-radius:10px;overflow:hidden;background:#11131a;will-change:transform,opacity;box-shadow:0 18px 34px -16px rgba(17,18,22,.5),0 0 0 1px rgba(17,18,22,.08)}
+  .ring .vc video{width:100%;height:100%;object-fit:cover;display:block}
+  .prof .c{max-width:1000px;padding:0}
+  .div{height:1px;background:rgba(17,18,22,.12)}
+  .prof-tit{padding:28px 0;text-align:center}
+  .prof-tit h2{font:inherit}
+  .selecionado{--bg-position:100%;display:inline-block;font:600 clamp(34px,5.2vw,62px)/1 var(--f);letter-spacing:-.045em;text-transform:uppercase;
+    background-image:linear-gradient(90deg,#111216 0 50%,rgba(17,18,22,.16) 50% 100%);background-size:200% 100%;background-position:var(--bg-position) 0;-webkit-background-clip:text;background-clip:text;color:transparent}
+  .selecionado.s2{background-image:linear-gradient(90deg,transparent 0 50%,rgba(205,205,203,.95) 50% 100%),linear-gradient(90deg,#f0b000,#f0b000);background-size:200% 100%,100% 100%;background-position:var(--bg-position) 0,0 0}
+  .prof-txt{display:grid;grid-template-columns:1fr 1fr;gap:80px;margin-top:34px}
+  .prof-txt p{font-size:17px;line-height:1.6;color:var(--mut-d)}
+  .prof-txt p b{color:var(--ink-d);font-weight:600}
+  .prof-foot{display:flex;align-items:center;justify-content:space-between;gap:28px;flex-wrap:wrap;margin-top:48px;padding-bottom:36px}
+  .selo{display:flex;align-items:center;gap:14px}
+  .selo img{width:112px;height:auto;filter:drop-shadow(0 6px 10px rgba(17,18,22,.18))}
+  .selo small{display:block;font-size:10px;letter-spacing:.28em;text-transform:uppercase;color:var(--mut-d)}
+  .selo b{display:block;font-size:17px;font-weight:600;line-height:1.15;letter-spacing:-.01em}
+  .lista{list-style:none;padding:0;display:grid;gap:7px;text-align:left}
+  .lista li{display:flex;align-items:center;gap:10px;font-size:14.5px;font-weight:500;color:var(--ink-d)}
+  .lista svg{flex:none;width:20px;height:20px}
 
-.top{padding:10px 20px 8px;}
-.logo{width:92px;height:auto;aspect-ratio:1900/701;}
+  footer{padding:26px 20px max(30px,env(safe-area-inset-bottom));text-align:center;font-size:12.5px;line-height:1.5;letter-spacing:.02em;color:var(--mut-d);background:var(--paper);border-top:1px solid rgba(17,18,22,.08)}
 
-.page{position:relative;max-width:520px;margin:0 auto;min-height:100svh;display:flex;flex-direction:column;}
-.photo{position:relative;aspect-ratio:1254/1010;overflow:hidden;}
-.photo img{width:100%;height:100%;object-fit:cover;object-position:50% 12%;}
-.photo::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(13,15,18,0) 62%,rgba(13,15,18,.85) 90%,var(--bg));}
-.photo .creds{position:absolute;z-index:2;left:20px;right:20px;bottom:10px;}
-.photo-frame > .cn{display:none;}
+  /* ============ MODAL ============ */
+  .modal{position:fixed;inset:0;z-index:60;display:flex;align-items:center;justify-content:center;padding:16px}
+  .modal__bg{position:absolute;inset:0;background:rgba(5,6,8,.82);backdrop-filter:blur(3px);-webkit-backdrop-filter:blur(3px)}
+  .modal__box{position:relative;width:100%;max-width:470px;max-height:calc(100svh - 32px);overflow-y:auto;padding:28px 22px 20px;border-radius:14px;background:linear-gradient(160deg,#1b1a16,#0d0f12);border:1px solid var(--line);box-shadow:0 40px 100px -30px rgba(0,0,0,.9);animation:sobe .25s var(--ease)}
+  .modal__tit{margin:0 36px 6px 0;font:800 23px/1.15 var(--f);letter-spacing:-.03em}
+  .modal__sub{margin:0 0 18px;font-size:14.5px;line-height:1.45;color:var(--txt2)}
+  .modal__x{position:absolute;top:12px;right:12px;display:grid;place-items:center;width:36px;height:36px;border:1px solid #2e2c28;border-radius:8px;background:var(--card);color:var(--txt2);cursor:pointer}
+  .modal__x:hover{color:var(--gold);border-color:var(--gold-dk)}
+  .field{margin-bottom:12px}
+  .field label{display:block;margin-bottom:6px;font:600 14px/1.2 var(--f)}
+  .field input{width:100%;height:54px;padding:0 16px;border-radius:8px;border:1.5px solid #2e2c28;background:var(--card);font-size:17px;outline:none;transition:border-color .15s,box-shadow .15s}
+  .field input::placeholder{color:#6b7380}
+  .field input:focus{border-color:var(--gold);box-shadow:0 0 0 4px rgba(255,198,74,.14)}
+  .field .err{display:none;margin-top:6px;font-size:13px;color:#ff7b72}
+  .field.has-error input{border-color:#e5534b}.field.has-error .err{display:block}
+  .modal .btn{width:100%;margin-top:6px}
+  .micro{margin:12px 2px 0;font-size:12.5px;line-height:1.45;color:var(--txt3);text-align:center}
+  .ok{display:none;text-align:center}
+  .ok h2{margin:4px 0 8px;font:800 23px/1.15 var(--f);letter-spacing:-.03em}
+  .ok p{margin:0 0 16px;color:var(--txt2)}
+  .modal.enviado #leadForm,.modal.enviado .micro,.modal.enviado .modal__tit,.modal.enviado .modal__sub{display:none}
+  .modal.enviado .ok{display:block}
+  .btn[disabled]{opacity:.65;cursor:progress}
+  @keyframes sobe{from{opacity:0;transform:translateY(16px)}to{opacity:1;transform:none}}
 
-.main{position:relative;padding:16px 20px 0;display:flex;flex-direction:column;}
-.cta{margin-top:18px;}
-footer{margin-top:auto;}
-
-@media (max-width:959px) and (max-height:760px){
-  h1{font-size:27px;margin-top:10px;}
-  .sub{font-size:14px;}
-}
-
-@media (min-width:960px){
-  .page{max-width:1200px;padding:0 40px;}
-  .top{display:flex;align-items:center;height:80px;padding-top:0;padding-bottom:0;border-bottom:1px solid #1E1D1A;margin:0 -40px;padding:0 40px;}
-  .wrap{display:grid;grid-template-columns:minmax(0,1fr) 480px;gap:64px;align-items:center;padding:48px 0 40px;}
-  .logo{width:120px;}
-  .main{padding:0;order:1;}
-  .side{order:2;}
-  .photo{aspect-ratio:1/1;border-radius:7px;}
-  .photo img{object-position:50% 0;}
-  .photo-frame{position:relative;padding:8px;border:1px solid var(--line);border-radius:12px;background:linear-gradient(135deg,#1b1a16,#0a0907 40%,#15120c);box-shadow:0 20px 65px #0006;}
-  .photo-frame::before{content:"";position:absolute;left:calc(50% - 60px);top:-1px;width:120px;height:2px;background:linear-gradient(90deg,transparent,#FFD866,transparent);z-index:3;}
-  .photo-frame > .cn{display:block;width:30px;height:30px;}
-  .photo-frame .cn.tl{top:-1px;left:-1px;border-width:3px 0 0 3px;border-radius:12px 0 0 0;}
-  .photo-frame .cn.tr{top:-1px;right:-1px;border-width:3px 3px 0 0;border-radius:0 12px 0 0;}
-  .photo-frame .cn.bl{bottom:-1px;left:-1px;border-width:0 0 3px 3px;border-radius:0 0 0 12px;}
-  .photo-frame .cn.br{bottom:-1px;right:-1px;border-width:0 3px 3px 0;border-radius:0 0 12px 0;}
-  .photo .creds{left:18px;right:18px;bottom:16px;}
-  .cred{padding:8px 13px;}
-  .cred__name{font-size:15px;}
-  .cred__txt{font-size:13px;}
-  .etq{font-size:13px;}
-  h1{margin-top:16px;font-size:52px;line-height:1.04;}
-  .sub{margin-top:18px;font-size:18px;max-width:32em;}
-  .row{display:grid;grid-template-columns:1fr 1fr;gap:12px;}
-  .btn{min-height:56px;font-size:17px;}
-  .cta{margin-top:30px;max-width:420px;}
-  footer{margin:0 -40px;}
-}
-@media (min-width:960px) and (max-width:1199px){
-  .wrap{grid-template-columns:minmax(0,1fr) 420px;gap:44px;}
-  h1{font-size:44px;}
-}
-
-.modal{position:fixed;inset:0;z-index:50;display:flex;align-items:center;justify-content:center;padding:16px;}
-.modal[hidden]{display:none;}
-.modal__bg{position:absolute;inset:0;background:rgba(5,6,8,.8);}
-.modal__box{position:relative;width:100%;max-width:440px;max-height:calc(100svh - 32px);overflow-x:hidden;overflow-y:auto;padding:22px 18px 18px;animation:sobe .18s ease-out;}
-.modal__tit{text-wrap:balance;margin:0 34px 16px 0;font:800 22px/1.15 var(--f);letter-spacing:-.03em;color:var(--txt);}
-.ok h2{margin:6px 0 8px;font:800 22px/1.15 var(--f);letter-spacing:-.03em;}
-.modal__x{position:absolute;top:10px;right:10px;z-index:2;display:flex;align-items:center;justify-content:center;width:36px;height:36px;padding:0;border:1px solid #2E2C28;border-radius:5px;background:var(--card2);color:var(--txt2);cursor:pointer;}
-.modal__x:hover{color:var(--gold);border-color:var(--gold-dk);}
-.modal__x svg{width:16px;height:16px;}
-@keyframes sobe{from{opacity:0;transform:translateY(10px);}to{opacity:1;transform:none;}}
-@media (min-width:960px){.modal__box{max-width:480px;padding:28px 24px 22px;}.modal__tit{font-size:26px;}}
+  /* ============ RESPONSIVO ============ */
+  @media (max-width:1199px) and (min-width:960px){.wrap{grid-template-columns:minmax(0,1fr) 440px;gap:44px}.hero h1{font-size:46px}}
+  @media (max-width:959px){
+    .page{max-width:560px;padding:0}
+    .top{height:auto;margin:0;padding:12px 20px 10px;border:0}
+    .logo{width:96px}
+    .wrap{display:flex;flex-direction:column;gap:0;padding:0 0 48px}
+    .side{order:1;width:100%}
+    .main{order:2;padding:22px 20px 0}
+    .frame{padding:0;border:0;border-radius:0;background:none;box-shadow:none}
+    .frame::before,.cn{display:none}
+    .photo{border-radius:0;aspect-ratio:1254/1010}
+    .photo img{object-position:50% 12%}
+    .creds{left:20px;right:20px;bottom:10px}
+    .cred{padding:6px 10px}.cred b{font-size:13px}.cred span{font-size:11px}
+    .etq{font-size:11px}
+    .hero h1{margin-top:12px;font-size:clamp(28px,8vw,34px);line-height:1.06}
+    .hero .sub{font-size:15.5px}
+    .hero .cta{margin-top:22px}
+  }
+  @media (max-width:767px){
+    .btn{width:100%;font-size:14px;padding:16px 18px;gap:8px}
+    .btn-wrap{display:block;width:100%}
+    .cur{left:72%}
+    .recebe{padding:64px 0 72px}
+    .c{padding:0 20px}
+    .mural{grid-template-columns:repeat(3,1fr);gap:10px}
+    .col:nth-child(n+4){display:none}
+    .cursos{grid-template-columns:1fr;gap:44px;margin-top:40px}
+    .thumb .num{left:18px;top:12px}
+    .thumb .lbl{left:18px;bottom:16px}
+    .thumb .lbl strong{font-size:24px}
+    .pill{margin-top:18px}
+    .prof-w{padding:64px 18px 6px}
+    .pf-palco{height:330px}
+    .pf-foto{width:250px;margin-left:-125px;height:300px}
+    .arc{width:220px;height:220px;margin-left:-110px;top:14px}
+    .ring-w{top:150px}
+    .ring .vc{width:84px;height:52px;left:-42px;top:-26px;border-radius:7px}
+    .prof-txt{grid-template-columns:1fr;gap:16px;margin-top:24px}
+    .prof-txt p{font-size:16px}
+    .prof-foot{flex-direction:column;align-items:stretch;text-align:center;gap:22px}
+    .selo{justify-content:center}
+    .lista{justify-items:center}
+  }
+  @media (prefers-reduced-motion:reduce){*,*::before,*::after{animation:none!important;transition:none!important}.cur{display:none}}
 </style>
 </head>
 <body>
 
-<div class="page">
-  <header class="top"><img class="logo" src="img/black-friday-240.webp" srcset="img/black-friday-240.webp 240w, img/black-friday-360.webp 360w" sizes="120px" alt="Black Friday Instituto Souto" width="1900" height="701"></header>
-
+<!-- ============ HERO ============ -->
+<div class="page hero">
+  <header class="top"><img class="logo" src="img/black-friday-240.webp" srcset="img/black-friday-240.webp 240w, img/black-friday-360.webp 360w" sizes="120px" width="240" height="89" alt="Black Friday Instituto Souto"></header>
   <div class="wrap">
     <div class="side">
-      <div class="photo-frame">
+      <div class="frame">
         <div class="photo">
-          <img src="img/ismael-720.webp" srcset="img/ismael-480.webp 480w, img/ismael-720.webp 720w, img/ismael-960.webp 960w, img/ismael-1254.webp 1254w" sizes="(min-width:960px) 480px, (min-width:520px) 520px, 100vw" alt="Prof. Ismael Souto com os brasões da PMERJ, das Guardas Municipais e das Polícias Militares" width="1254" height="1254" fetchpriority="high">
+          <img src="img/ismael-720.webp" srcset="img/ismael-480.webp 480w, img/ismael-720.webp 720w, img/ismael-960.webp 960w, img/ismael-1254.webp 1254w" sizes="(min-width:960px) 520px, 100vw" width="1254" height="1254" alt="Prof. Ismael Souto com os brasões dos 7 cursos: PMERJ, Guardas Municipais e Polícias Militares" fetchpriority="high">
           <div class="creds">
-            <div class="cred">
-              <span class="cred__name">Prof. Ismael Souto</span>
-              <span class="cred__txt">4 aprovações em concursos</span>
-            </div>
-            <div class="cred cred--r">
-              <span class="cred__name">Instituto Souto</span>
-              <span class="cred__txt">+4.000 alunos aprovados</span>
-            </div>
+            <div class="cred"><b>Prof. Ismael Souto</b><span>4 aprovações em concursos</span></div>
+            <div class="cred cred--r"><b>Instituto Souto</b><span>+4.000 alunos aprovados</span></div>
           </div>
         </div>
         <span class="cn tl"></span><span class="cn tr"></span><span class="cn bl"></span><span class="cn br"></span>
       </div>
     </div>
-
     <main class="main">
-      <p class="etq"><i></i>SUPER LIVE · TERÇA 24/11 · 19H</p>
+      <p class="etq"><i></i>Super live · Terça 24/11 · 20h</p>
       <h1>A maior Black Friday da história do Instituto Souto <span class="g">começa 24/11</span></h1>
-      <p class="sub">Às 19h, ao vivo: o Prof. Ismael Souto mostra o caminho pra sua <b>aprovação na PMERJ, nas Guardas Municipais</b> e nas carreiras policiais.</p>
-      <button class="btn cta" type="button" id="abrirCadastro" aria-haspopup="dialog" aria-controls="modal"><span>Fazer meu cadastro na super live</span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></button>
+      <p class="sub">Às 20h, ao vivo: o Prof. Ismael Souto revela o preço dos <b>7 cursos para PMERJ, Guardas Municipais e PM SP</b>. Entre no grupo e receba o link da live.</p>
+      <div class="cta">
+        <div class="btn-wrap"><button class="btn abrir" type="button" aria-haspopup="dialog" aria-controls="modal"><svg class="wa-ic" width="20" height="20" viewBox="0 0 24 24" aria-hidden="true"><use href="#wa"/></svg>Quero entrar no grupo da Black</button><span class="cur" aria-hidden="true"><svg width="20" height="20" viewBox="0 0 24 24"><use href="#seta"/></svg><b>Você</b></span></div>
+        <p class="note"><i></i>Grupo 100% gratuito no WhatsApp</p>
+      </div>
     </main>
   </div>
-
-  <footer>Curso preparatório independente, sem vínculo com as corporações citadas ou com as bancas organizadoras.</footer>
 </div>
 
+<!-- ============ OS 7 CURSOS ============ -->
+<section class="recebe" aria-labelledby="t-cursos">
+  <div class="mural" id="mural" aria-hidden="true"></div>
+  <div class="veil" aria-hidden="true"></div>
+  <div class="c">
+    <h2 class="tit rv" id="t-cursos"><span class="dgw">Os 7 cursos que fazem parte</span> <span class="dgb">da Black Souto:</span></h2>
+    <p class="sub2 rv dl1">Preparatórios para as Guardas Municipais e as Polícias Militares, com o método do Prof. Ismael Souto.</p>
+    <div class="lista-oferta">
+      <ul>
+        <li style="--i:0"><img src="img/brasao-pmerj.webp" width="231" height="260" alt="Brasão PMERJ" loading="lazy" decoding="async"><span class="nm"><small>Preparatório</small>PMERJ</span><span class="pontos"></span><span class="val">✓ Incluso</span></li>
+        <li style="--i:1"><img src="img/brasao-gcm-angra.webp" width="138" height="173" alt="Brasão GCM Angra dos Reis" loading="lazy" decoding="async"><span class="nm"><small>Preparatório</small>GCM Angra dos Reis</span><span class="pontos"></span><span class="val">✓ Incluso</span></li>
+        <li style="--i:2"><img src="img/brasao-gm-queimados.webp" width="139" height="165" alt="Brasão GM Queimados" loading="lazy" decoding="async"><span class="nm"><small>Preparatório</small>GM Queimados</span><span class="pontos"></span><span class="val">✓ Incluso</span></li>
+        <li style="--i:3"><img src="img/brasao-gm-marica.webp" width="167" height="177" alt="Brasão GM Maricá" loading="lazy" decoding="async"><span class="nm"><small>Preparatório</small>GM Maricá</span><span class="pontos"></span><span class="val">✓ Incluso</span></li>
+        <li style="--i:4"><img src="img/brasao-gm-sao-goncalo.webp" width="139" height="182" alt="Brasão GM São Gonçalo" loading="lazy" decoding="async"><span class="nm"><small>Preparatório</small>GM São Gonçalo</span><span class="pontos"></span><span class="val">✓ Incluso</span></li>
+        <li style="--i:5"><img src="img/brasao-pm-sao-paulo.webp" width="164" height="152" alt="Brasão PM São Paulo" loading="lazy" decoding="async"><span class="nm"><small>Preparatório</small>PM São Paulo</span><span class="pontos"></span><span class="val">✓ Incluso</span></li>
+        <li style="--i:6"><img src="img/brasao-gc-petropolis.webp" width="137" height="176" alt="Brasão Guarda Civil de Petrópolis" loading="lazy" decoding="async"><span class="nm"><small>Preparatório</small>Guarda Civil de Petrópolis</span><span class="pontos"></span><span class="val">✓ Incluso</span></li>
+      </ul>
+      <div class="preco-bloq">
+        <div class="pb-txt"><small>Valor da Black Souto</small><strong>7 cursos por</strong></div>
+        <div class="pb-valor"><span class="borrado" aria-hidden="true">R$ 0.000,00</span><span class="cadeado"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" aria-hidden="true"><rect x="5" y="11" width="14" height="10" rx="2"/><path d="M8 11V8a4 4 0 0 1 8 0v3"/></svg>Revelado na live · 24/11 · 20h</span></div>
+      </div>
+    </div>
+    <div class="centro">
+      <p class="nota rv">O preço sai só na live. <b>Entre no grupo VIP e receba o link.</b></p>
+      <div class="btn-wrap rv dl1"><button class="btn abrir" type="button" aria-haspopup="dialog" aria-controls="modal"><svg class="wa-ic" width="20" height="20" viewBox="0 0 24 24" aria-hidden="true"><use href="#wa"/></svg>Quero entrar no grupo VIP</button><span class="cur" aria-hidden="true"><svg width="20" height="20" viewBox="0 0 24 24"><use href="#seta"/></svg><b>Você</b></span></div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ PROFESSOR ============ -->
+<div class="prof-w">
+  <div class="notch" aria-hidden="true"><svg width="132" height="34" viewBox="0 0 132 34"><path d="M0 0H132C112 0 106 34 84 34H48C26 34 20 0 0 0Z" fill="#0d0f12"/><path class="ar" d="M66 9v13m-5-5 5 5 5-5" fill="none" stroke="#fff" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+  <section class="prof" aria-labelledby="t-prof">
+    <div class="pf-palco">
+      <div class="ring-w" aria-hidden="true"><div class="ring" id="ring"></div></div>
+      <div class="prof-bg"></div>
+      <svg class="arc" viewBox="0 0 300 300" aria-hidden="true"><defs><path id="ar1" d="M44,190 A110,110 0 0 1 128,42"/><path id="ar2" d="M172,42 A110,110 0 0 1 256,190"/></defs><text><textPath href="#ar1" startOffset="4%">Instituto Souto</textPath></text><text><textPath href="#ar2" startOffset="14%">Ismael Souto</textPath></text></svg>
+      <div class="pf-foto"><img src="img/prof-ismael.webp" alt="Prof. Ismael Souto" width="720" height="900" loading="lazy"></div>
+    </div>
+
+    <div class="c">
+      <div class="div"></div>
+      <div class="prof-tit"><h2 id="t-prof"><span class="selecionado s1">Quem será seu&nbsp;</span><span class="selecionado s2">professor?</span></h2></div>
+      <div class="div"></div>
+      <div class="prof-txt">
+        <p class="rv">Ismael Souto é professor especialista em carreiras policiais e fundador do Instituto Souto. Aprovado para Soldado PM, Oficial PM e Sargento da Aeronáutica, sabe na prática o que é estudar para vestir uma farda.</p>
+        <p class="rv dl1">Já ajudou mais de 4.000 alunos a conquistarem a aprovação. Na <b>super live de terça, 24/11, às 20h</b>, ele revela a condição da Black Friday para os 7 cursos. O link da live sai no grupo do WhatsApp.</p>
+      </div>
+      <div class="prof-foot">
+        <div class="selo rv"><img src="img/black-friday-240.webp" alt="Black Friday Instituto Souto" width="240" height="89" loading="lazy"><div><small>Black Friday</small><b>Instituto<br>Souto</b></div></div>
+        <div class="btn-wrap rv dl1"><button class="btn abrir" type="button" aria-haspopup="dialog" aria-controls="modal"><svg class="wa-ic" width="20" height="20" viewBox="0 0 24 24" aria-hidden="true"><use href="#wa"/></svg>Quero entrar no grupo</button><span class="cur" aria-hidden="true"><svg width="20" height="20" viewBox="0 0 24 24"><use href="#seta"/></svg><b>Você</b></span></div>
+        <ul class="lista rv dl2">
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="url(#gw)" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 11.5a8.4 8.4 0 0 1-12.4 7.4L3 21l2.1-5.4A8.4 8.4 0 1 1 21 11.5z"/></svg>Grupo gratuito no WhatsApp</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="url(#gw)" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9.5"/><path d="M10 8.6v6.8l5.6-3.4z" fill="url(#gw)" stroke="none"/></svg>Super live 24/11 às 20h</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+</div>
+
+
+<footer>© <span id="ano">2026</span> INSTITUTO SOUTO • Curso preparatório independente, sem vínculo com as corporações citadas ou com as bancas organizadoras.</footer>
+
+<!-- ============ MODAL DE CADASTRO ============ -->
 <div class="modal" id="modal" hidden>
   <div class="modal__bg" data-fechar></div>
-  <div class="modal__box frame" role="dialog" aria-modal="true" aria-labelledby="modalTit">
-    <button class="modal__x" type="button" data-fechar aria-label="Fechar"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" aria-hidden="true"><path d="M6 6l12 12M18 6L6 18"/></svg></button>
-    <h2 class="modal__tit" id="modalTit">Fazer meu cadastro na super live</h2>
+  <div class="modal__box" role="dialog" aria-modal="true" aria-labelledby="modalTit">
+    <button class="modal__x" type="button" data-fechar aria-label="Fechar"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" aria-hidden="true"><path d="M6 6l12 12M18 6L6 18"/></svg></button>
+    <h2 class="modal__tit" id="modalTit">Entrar no grupo da Black Souto</h2>
+    <p class="modal__sub">Preencha e você vai direto para o grupo do WhatsApp. O link da live sai lá, terça, 24/11, às 20h.</p>
     <form id="leadForm" novalidate>
-      <div class="row">
-        <div class="field" id="f-nome">
-          <label for="nome">Seu nome</label>
-          <input type="text" id="nome" name="nome" placeholder="Como você quer ser chamado" autocomplete="name" required>
-          <span class="err">Escreva seu nome</span>
-        </div>
-        <div class="field" id="f-whats">
-          <label for="whatsapp">Seu WhatsApp</label>
-          <input type="tel" id="whatsapp" name="whatsapp" placeholder="(DDD) 9 9999-9999" inputmode="numeric" autocomplete="tel" required>
-          <span class="err">Confira o número com DDD</span>
-        </div>
+      <div class="field" id="f-nome">
+        <label for="nome">Seu nome</label>
+        <input type="text" id="nome" name="nome" placeholder="Como você quer ser chamado" autocomplete="name" required>
+        <span class="err">Escreva seu nome</span>
       </div>
-      <input type="hidden" name="utm_source"><input type="hidden" name="utm_medium">
-      <input type="hidden" name="utm_campaign"><input type="hidden" name="utm_content">
-      <input type="hidden" name="utm_term"><input type="hidden" name="fbclid">
-      <button class="btn submit" type="submit"><span class="submit__txt">Fazer meu cadastro na super live</span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></button>
+      <div class="field" id="f-whats">
+        <label for="whatsapp">Seu WhatsApp</label>
+        <input type="tel" id="whatsapp" name="whatsapp" placeholder="(DDD) 9 9999-9999" inputmode="numeric" autocomplete="tel" required>
+        <span class="err">Confira o número com DDD</span>
+      </div>
+      <input type="hidden" name="utm_source"><input type="hidden" name="utm_medium"><input type="hidden" name="utm_campaign">
+      <input type="hidden" name="utm_content"><input type="hidden" name="utm_term"><input type="hidden" name="fbclid">
+      <button class="btn submit" type="submit"><svg class="wa-ic" width="20" height="20" viewBox="0 0 24 24" aria-hidden="true"><use href="#wa"/></svg><span class="submit__txt">Entrar no grupo</span></button>
     </form>
-    <p class="micro">Depois do cadastro, você entra no grupo do WhatsApp. O link da live sai lá, terça, 24/11, às 19h.</p>
+    <p class="micro">Seus dados ficam só com o Instituto Souto.</p>
     <div class="ok" role="status">
       <h2>Cadastro feito!</h2>
-      <p>Agora entre no grupo do WhatsApp. É lá que o link da live sai, terça, 24/11, às 19h.</p>
-      <a class="btn" id="btnGrupo" href="#" rel="noopener">Entrar no grupo do WhatsApp</a>
+      <p>Abrindo o grupo do WhatsApp… Se não abrir sozinho, toque no botão.</p>
+      <a class="btn" id="btnGrupo" href="#" rel="noopener"><svg class="wa-ic" width="20" height="20" viewBox="0 0 24 24" aria-hidden="true"><use href="#wa"/></svg>Entrar no grupo do WhatsApp</a>
     </div>
-    <span class="cn tl"></span><span class="cn tr"></span><span class="cn bl"></span><span class="cn br"></span>
   </div>
 </div>
+
+<!-- ícones reaproveitados -->
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <defs>
+    <linearGradient id="gw" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#f0b000"/><stop offset="1" stop-color="#f0b000"/></linearGradient>
+    <symbol id="wa" viewBox="0 0 24 24"><path fill="#fff" d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38c1.45.79 3.08 1.21 4.74 1.21 5.46 0 9.91-4.45 9.91-9.91C21.95 6.45 17.5 2 12.04 2zm5.8 14.05c-.24.68-1.42 1.3-1.95 1.35-.5.05-.97.23-3.27-.68-2.77-1.09-4.52-3.92-4.66-4.1-.13-.18-1.11-1.48-1.11-2.82 0-1.34.7-2 .95-2.27.25-.27.54-.34.72-.34h.52c.17 0 .39-.06.61.47.24.56.8 1.94.87 2.08.07.14.12.3.02.48-.09.18-.14.3-.27.46-.14.16-.29.36-.41.48-.14.14-.28.29-.12.56.16.27.71 1.17 1.53 1.9 1.05.94 1.94 1.23 2.21 1.37.27.14.43.12.59-.07.16-.18.68-.79.86-1.07.18-.27.36-.23.61-.14.25.09 1.59.75 1.86.89.27.14.45.2.52.32.07.11.07.66-.17 1.35z"/></symbol>
+    <symbol id="seta" viewBox="0 0 24 24"><path d="M3.5 2.8 20 10.2l-7.1 2.2-2.7 7.3z" fill="#ff6a1a" stroke="#fff" stroke-width="1.6" stroke-linejoin="round"/></symbol>
+  </defs>
+</svg>
+
+
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <defs>
+    <linearGradient id="gw" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#f0b000"/><stop offset="1" stop-color="#f0b000"/></linearGradient>
+    <symbol id="wa" viewBox="0 0 24 24"><path fill="#fff" d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38c1.45.79 3.08 1.21 4.74 1.21 5.46 0 9.91-4.45 9.91-9.91C21.95 6.45 17.5 2 12.04 2zm5.8 14.05c-.24.68-1.42 1.3-1.95 1.35-.5.05-.97.23-3.27-.68-2.77-1.09-4.52-3.92-4.66-4.1-.13-.18-1.11-1.48-1.11-2.82 0-1.34.7-2 .95-2.27.25-.27.54-.34.72-.34h.52c.17 0 .39-.06.61.47.24.56.8 1.94.87 2.08.07.14.12.3.02.48-.09.18-.14.3-.27.46-.14.16-.29.36-.41.48-.14.14-.28.29-.12.56.16.27.71 1.17 1.53 1.9 1.05.94 1.94 1.23 2.21 1.37.27.14.43.12.59-.07.16-.18.68-.79.86-1.07.18-.27.36-.23.61-.14.25.09 1.59.75 1.86.89.27.14.45.2.52.32.07.11.07.66-.17 1.35z"/></symbol>
+    <symbol id="seta" viewBox="0 0 24 24"><path d="M3.5 2.8 20 10.2l-7.1 2.2-2.7 7.3z" fill="#ff6a1a" stroke="#fff" stroke-width="1.6" stroke-linejoin="round"/></symbol>
+  </defs>
+</svg>
 
 <script>
 /* ===================== CONFIGURAÇÃO: só mexa aqui ===================== */
-// 1) Link /exec do Apps Script da planilha do Ismael (veja o arquivo apps-script.gs)
-const FORM_ENDPOINT = "";
-// 2) Link do grupo do WhatsApp do Ismael (https://chat.whatsapp.com/...)
+// 1) Link do grupo do WhatsApp da Black (https://chat.whatsapp.com/...)
 const GRUPO_WHATSAPP = "";
-// 3) ID do Pixel da Meta do Ismael (só números). Vazio = sem pixel.
+// 2) Link /exec do Apps Script da planilha (o mesmo da blacksouto). Vazio = não salva lead.
+const FORM_ENDPOINT = "";
+// 3) ID do Pixel da Meta (só números). Vazio = sem pixel.
 const PIXEL_ID = "";
 /* ===================================================================== */
+const VIDEO_BASE = "video/";
+const reduz = matchMedia("(prefers-reduced-motion: reduce)").matches;
+document.getElementById("ano").textContent = new Date().getFullYear();
 
-const RASTREIO = ['utm_source','utm_medium','utm_campaign','utm_content','utm_term','fbclid'];
+/* ---------- mural de artes desfocado (seção 2) ---------- */
+(function(){
+  const B = n => "img/brasao-"+n+".webp";
+  const P = [["img","","A maior <em>Black</em>"],["t","ouro","7 <em>cursos</em>"],["br","pmerj"],["t","verm","Live <em>24/11</em>"],
+    ["br","gcm-angra"],["img","r","+4.000 <em>aprovados</em>"],["t","","Preço <em>secreto</em>"],["br","gm-marica"],
+    ["t","ouro","20h <em>ao vivo</em>"],["br","pm-sao-paulo"],["img","l","Grupo <em>VIP</em>"],["br","gm-sao-goncalo"],
+    ["t","verm","Black <em>Souto</em>"],["br","gm-queimados"],["t","","Carreiras <em>policiais</em>"],["br","gc-petropolis"]];
+  const tile = ([k,a,txt]) => k === "img"
+    ? '<div class="post"><img src="img/prof-ismael.webp" alt="" loading="lazy" decoding="async" style="object-position:'+(a==="r"?"75%":a==="l"?"25%":"50%")+' 15%"><div class="pt">'+txt+'</div></div>'
+    : k === "br" ? '<div class="post br"><img src="'+B(a)+'" alt="" loading="lazy" decoding="async"></div>'
+    : '<div class="post t '+a+'"><div class="pt">'+txt+'</div></div>';
+  const vel = [.05,-.04,.07,-.06,.04,-.05];
+  document.getElementById("mural").innerHTML = [0,1,2,3,4,5].map(c =>
+    '<div class="col" data-speed="'+vel[c]+'">'+P.filter((_,i)=>i%6===c).concat(P.filter((_,i)=>(i+2)%6===c),P.filter((_,i)=>(i+4)%6===c)).map(tile).join("")+'</div>').join("");
+})();
 
-/* Pixel carregado só na primeira interação (rolar, tocar, mover o mouse, teclar).
-   Assim ele não pesa no carregamento e o PageSpeed fica em 100. */
+/* ---------- anel de vídeos atrás do professor ---------- */
+(function(){
+  const ring = document.getElementById("ring"), N = 8, palco = document.querySelector(".pf-palco");
+  ring.innerHTML = Array.from({length:N}, (_,i) => '<div class="vc"><video muted loop playsinline preload="none" data-src="'+VIDEO_BASE+String(i+1).padStart(2,"0")+'.mp4"></video></div>').join("");
+  const cards = [...ring.querySelectorAll(".vc")];
+  let ang = 0, on = false, last = 0;
+  function orbit(t){
+    const dt = last ? Math.min(50, t-last) : 16; last = t;
+    if (!reduz) ang += dt*0.00016;
+    const m = innerWidth < 768, cw = m ? 84 : 200, RX = Math.max(60, Math.min(m ? 150 : 360, palco.clientWidth/2 - cw/2 - 8)), RY = m ? 30 : 70;
+    cards.forEach((c,i) => {
+      const a = ang + i*Math.PI*2/N, s = Math.sin(a), k = (1+s)/2;
+      c.style.transform = "translate3d("+(Math.cos(a)*RX).toFixed(1)+"px,"+(s*RY - Math.cos(a)*RX*.14).toFixed(1)+"px,0) scale("+(.62+.38*k).toFixed(3)+")";
+      c.style.opacity = (.35+.65*k).toFixed(2);
+      c.style.zIndex = k > .5 ? 60+Math.round(k*30) : 10+Math.round(k*30);
+      c.style.filter = "blur("+((1-k)*1.6).toFixed(2)+"px)";
+    });
+    if (on) requestAnimationFrame(orbit);
+  }
+  orbit(0);
+  new IntersectionObserver(es => es.forEach(e => {
+    ring.querySelectorAll("video").forEach(v => { if (e.isIntersecting){ if (!v.src) v.src = v.dataset.src; v.play().catch(()=>{}); } else v.pause(); });
+    if (e.isIntersecting && !on){ on = true; last = 0; requestAnimationFrame(orbit); } else if (!e.isIntersecting) on = false;
+  }), {rootMargin:"200px 0px"}).observe(palco);
+})();
+
+/* ---------- revelar ao rolar ---------- */
+(function(){
+  const alvos = document.querySelectorAll(".rv,.bl,.lista-oferta");
+  if (!("IntersectionObserver" in window)) { alvos.forEach(el => el.classList.add("on")); return; }
+  const io = new IntersectionObserver(es => es.forEach(e => { if (e.isIntersecting){ e.target.classList.add("on"); io.unobserve(e.target); } }), {rootMargin:"0px 0px -10% 0px"});
+  alvos.forEach(el => io.observe(el));
+})();
+
+/* ---------- título do professor preenchendo + parallax do mural ---------- */
+(function(){
+  const s1 = document.querySelector(".selecionado.s1"), s2 = document.querySelector(".selecionado.s2"), par = document.querySelectorAll("[data-speed]");
+  function frame(){
+    const vh = innerHeight, r = s1.getBoundingClientRect();
+    let p = (vh - r.top)/(vh*.55); p = Math.max(0, Math.min(1, p));
+    s1.style.setProperty("--bg-position", (100 - 100*Math.min(1, p/.55)) + "%");
+    s2.style.setProperty("--bg-position", (100 - 100*Math.max(0, Math.min(1, (p-.5)/.5))) + "%");
+    if (reduz) return;
+    par.forEach(el => { const b = el.parentElement.getBoundingClientRect(); if (b.bottom < -200 || b.top > vh + 200) return; const mid = b.top + b.height/2 - vh/2; el.style.transform = "translate3d(0,"+(-mid*parseFloat(el.dataset.speed)).toFixed(1)+"px,0)"; });
+  }
+  let tk = false;
+  addEventListener("scroll", () => { if (!tk){ tk = true; requestAnimationFrame(() => { frame(); tk = false; }); } }, {passive:true});
+  addEventListener("resize", frame); frame();
+})();
+
+/* ---------- pixel (carrega só na 1ª interação: PageSpeed 100) ---------- */
 let pixelOn = false;
 function ligaPixel(){
   if (pixelOn || !PIXEL_ID || /[?&]teste=1(&|#|$)/.test(location.search)) return;
   pixelOn = true;
   !function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];t=b.createElement(e);t.async=!0;t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}(window,document,'script','https://connect.facebook.net/en_US/fbevents.js');
-  fbq('init', PIXEL_ID);
-  fbq('track', 'PageView');
+  fbq('init', PIXEL_ID); fbq('track', 'PageView');
 }
-['scroll','pointerdown','pointermove','touchstart','keydown'].forEach(ev => addEventListener(ev, ligaPixel, {once:true, passive:true}));
+["scroll","pointerdown","pointermove","touchstart","keydown"].forEach(ev => addEventListener(ev, ligaPixel, {once:true, passive:true}));
 
-/* ===================== POPUP ===================== */
+/* ---------- modal de cadastro ---------- */
 (function(){
-  const modal = document.getElementById('modal');
-  const abrir = document.getElementById('abrirCadastro');
-  const caixa = modal.querySelector('.modal__box');
+  const modal = document.getElementById("modal"), caixa = modal.querySelector(".modal__box"), form = document.getElementById("leadForm");
+  const btnGrupo = document.getElementById("btnGrupo");
+  if (GRUPO_WHATSAPP) btnGrupo.href = GRUPO_WHATSAPP;
   let scrollY = 0, voltaFoco = null;
   function trava(on){
     const b = document.body;
-    if (on) { scrollY = window.scrollY; Object.assign(b.style,{position:'fixed',top:(-scrollY)+'px',left:'0',right:'0',overflow:'hidden'}); }
-    else { Object.assign(b.style,{position:'',top:'',left:'',right:'',overflow:''}); window.scrollTo(0, scrollY); }
+    if (on){ scrollY = window.scrollY; Object.assign(b.style,{position:"fixed",top:(-scrollY)+"px",left:"0",right:"0",overflow:"hidden"}); }
+    else { Object.assign(b.style,{position:"",top:"",left:"",right:"",overflow:""}); window.scrollTo(0, scrollY); }
   }
-  const focaveis = () => [...caixa.querySelectorAll('button:not([disabled]),input:not([type="hidden"]),a[href]')].filter(el => el.offsetParent !== null);
-  function abrirModal(){ ligaPixel(); voltaFoco = document.activeElement; modal.hidden = false; trava(true); const n = document.getElementById('nome'); if (n.offsetParent) n.focus(); }
-  function fecharModal(){ if (modal.hidden) return; modal.hidden = true; trava(false); if (voltaFoco && voltaFoco.focus) voltaFoco.focus(); }
-  abrir.addEventListener('click', abrirModal);
-  modal.addEventListener('click', e => { if (e.target.closest('[data-fechar]')) fecharModal(); });
-  document.addEventListener('keydown', e => {
+  function abrir(){ ligaPixel(); voltaFoco = document.activeElement; modal.hidden = false; trava(true); if (matchMedia("(hover:hover)").matches) document.getElementById("nome").focus(); }
+  function fechar(){ if (modal.hidden) return; modal.hidden = true; trava(false); if (voltaFoco && voltaFoco.focus) voltaFoco.focus(); }
+  document.querySelectorAll(".abrir").forEach(b => b.addEventListener("click", abrir));
+  modal.addEventListener("click", e => { if (e.target.closest("[data-fechar]")) fechar(); });
+  document.addEventListener("keydown", e => {
     if (modal.hidden) return;
-    if (e.key === 'Escape') { e.preventDefault(); fecharModal(); return; }
-    if (e.key === 'Tab') {
-      const f = focaveis(); if (!f.length) return;
+    if (e.key === "Escape"){ e.preventDefault(); fechar(); return; }
+    if (e.key === "Tab"){
+      const f = [...caixa.querySelectorAll('button:not([disabled]),input:not([type="hidden"]),a[href]')].filter(el => el.offsetParent !== null);
       const i = f.indexOf(document.activeElement);
-      if (e.shiftKey && i <= 0) { e.preventDefault(); f[f.length-1].focus(); }
-      else if (!e.shiftKey && i === f.length-1) { e.preventDefault(); f[0].focus(); }
+      if (e.shiftKey && i <= 0){ e.preventDefault(); f[f.length-1].focus(); }
+      else if (!e.shiftKey && i === f.length-1){ e.preventDefault(); f[0].focus(); }
     }
   });
-})();
 
-/* ===================== RASTREIO (UTM / fbclid) ===================== */
-(function(){
+  // UTM / fbclid
   const p = new URLSearchParams(location.search);
-  const form = document.getElementById('leadForm');
-  RASTREIO.forEach(k => { const f = form.elements[k]; if (f) f.value = p.get(k) || ''; });
-})();
+  ["utm_source","utm_medium","utm_campaign","utm_content","utm_term","fbclid"].forEach(k => { const f = form.elements[k]; if (f) f.value = p.get(k) || ""; });
 
-/* ===================== MÁSCARA DE TELEFONE ===================== */
-function telNacional(raw){
-  let d = String(raw || '').replace(/\D/g,'').replace(/^0+/, '');
-  if (d.length >= 12 && d.startsWith('55')) d = d.slice(2).replace(/^0+/, '');
-  return d;
-}
-document.getElementById('whatsapp').addEventListener('input', e => {
-  const tel = e.target;
-  let v = telNacional(tel.value).slice(0,11);
-  if (v.length > 6)      v = `(${v.slice(0,2)})${v.slice(2,7)}-${v.slice(7)}`;
-  else if (v.length > 2) v = `(${v.slice(0,2)})${v.slice(2)}`;
-  else if (v.length > 0) v = `(${v}`;
-  tel.value = v;
-});
+  // máscara do telefone
+  function telNacional(raw){
+    let d = String(raw||"").replace(/\D/g,"").replace(/^0+/,"");
+    if (d.length >= 12 && d.startsWith("55")) d = d.slice(2).replace(/^0+/,"");
+    return d.slice(0,11);
+  }
+  const tel = document.getElementById("whatsapp");
+  tel.addEventListener("input", () => {
+    const d = telNacional(tel.value); let v = d;
+    if (d.length > 2) v = "(" + d.slice(0,2) + ") " + d.slice(2);
+    if (d.length > 7) v = "(" + d.slice(0,2) + ") " + d.slice(2, d.length-4) + "-" + d.slice(-4);
+    tel.value = v; document.getElementById("f-whats").classList.remove("has-error");
+  });
+  document.getElementById("nome").addEventListener("input", () => document.getElementById("f-nome").classList.remove("has-error"));
 
-/* ===================== ENVIO ===================== */
-(function(){
-  const modal = document.getElementById('modal');
-  const form = document.getElementById('leadForm');
-  const btn  = form.querySelector('.submit');
-  const txt  = btn.querySelector('.submit__txt');
-  const btnGrupo = document.getElementById('btnGrupo');
-  if (GRUPO_WHATSAPP) btnGrupo.href = GRUPO_WHATSAPP; else btnGrupo.hidden = true;
-
-  const setError = (id, on) => {
-    const wrap = document.getElementById(id);
-    wrap.classList.toggle('has-error', on);
-    wrap.querySelector('input').setAttribute('aria-invalid', on ? 'true' : 'false');
-  };
-
-  form.addEventListener('submit', async e => {
+  form.addEventListener("submit", async e => {
     e.preventDefault();
-    const nome   = form.elements['nome'].value.trim();
-    const digits = telNacional(form.elements['whatsapp'].value);
-    const nomeOk = nome.length >= 2;
-    const telOk  = digits.length >= 10 && digits.length <= 11;
-    setError('f-nome', !nomeOk);
-    setError('f-whats', !telOk);
-    if (!nomeOk || !telOk) { form.querySelector('.has-error input').focus(); return; }
-
-    btn.disabled = true;
-    txt.textContent = 'Enviando...';
-
+    const btn = form.querySelector(".submit"), txt = btn.querySelector(".submit__txt");
+    const nome = form.elements.nome.value.trim(), digits = telNacional(tel.value);
+    const nomeOk = nome.length >= 2, telOk = /^[1-9]{2}9\d{8}$/.test(digits) || /^[1-9]{2}[2-5]\d{7}$/.test(digits);
+    document.getElementById("f-nome").classList.toggle("has-error", !nomeOk);
+    document.getElementById("f-whats").classList.toggle("has-error", !telOk);
+    if (!nomeOk || !telOk){ form.querySelector(".has-error input").focus(); return; }
+    btn.disabled = true; txt.textContent = "Enviando...";
     const payload = Object.fromEntries(new FormData(form).entries());
-    payload.whatsapp = '55' + digits;
-    payload.pagina = location.href.split('#')[0];
-    payload.campanha = 'Black Souto - Super Live 24/11';
-
+    payload.whatsapp = "55" + digits;
+    payload.pagina = location.href.split("#")[0];
+    payload.campanha = "Black Souto - Captação Live 24/11 20h";
     try {
-      if (FORM_ENDPOINT) {
+      if (FORM_ENDPOINT){
         const corpo = JSON.stringify(payload);
-        // text/plain evita o preflight (o Apps Script não responde CORS); sendBeacon entrega mesmo saindo da página
-        const enviou = navigator.sendBeacon && navigator.sendBeacon(FORM_ENDPOINT, new Blob([corpo], {type:'text/plain;charset=UTF-8'}));
-        if (!enviou) await fetch(FORM_ENDPOINT, {method:'POST', mode:'no-cors', keepalive:true, headers:{'Content-Type':'text/plain;charset=UTF-8'}, body:corpo});
+        const enviou = navigator.sendBeacon && navigator.sendBeacon(FORM_ENDPOINT, new Blob([corpo], {type:"text/plain;charset=UTF-8"}));
+        if (!enviou) await fetch(FORM_ENDPOINT, {method:"POST", mode:"no-cors", keepalive:true, headers:{"Content-Type":"text/plain;charset=UTF-8"}, body:corpo});
       }
       let espera = 0;
-      if (window.fbq && PIXEL_ID) {
-        const partes = nome.toLowerCase().split(/\s+/);
-        const pareia = { ph: payload.whatsapp, fn: partes[0] };
-        if (partes.length > 1) pareia.ln = partes[partes.length - 1];
-        fbq('init', PIXEL_ID, pareia);
-        fbq('track', 'Lead');
-        espera = 300;
+      if (window.fbq && PIXEL_ID){
+        const partes = nome.toLowerCase().split(/\s+/), pareia = {ph:payload.whatsapp, fn:partes[0]};
+        if (partes.length > 1) pareia.ln = partes[partes.length-1];
+        fbq("init", PIXEL_ID, pareia); fbq("track", "Lead"); espera = 300;
       }
-      modal.classList.add('enviado');
-      if (GRUPO_WHATSAPP) setTimeout(() => { window.location.href = GRUPO_WHATSAPP; }, Math.max(espera, 900));
-    } catch (err) {
-      btn.disabled = false;
-      txt.textContent = 'Fazer meu cadastro na super live';
-      alert('Não conseguimos enviar sua inscrição. Confira sua conexão e tente de novo.');
+      modal.classList.add("enviado");
+      if (GRUPO_WHATSAPP) setTimeout(() => { location.href = GRUPO_WHATSAPP; }, Math.max(espera, 900));
+    } catch(err){
+      btn.disabled = false; txt.textContent = "Entrar no grupo";
+      alert("Não conseguimos enviar seu cadastro. Confira sua conexão e tente de novo.");
     }
   });
 })();
