@@ -435,7 +435,7 @@
 
 <script>
 /* ===================== CONFIGURAÇÃO: só mexa aqui ===================== */
-// 1) Link do grupo do WhatsApp da Black (https://chat.whatsapp.com/...)
+// 1) Link do grupo do WhatsApp da Black (https://chat.whatsapp.com/...). Preenchido = todos os botões levam direto pro grupo, sem formulário.
 const GRUPO_WHATSAPP = "";
 // 2) Link /exec do Apps Script da planilha (o mesmo da blacksouto). Vazio = não salva lead.
 const FORM_ENDPOINT = "";
@@ -533,7 +533,9 @@ function ligaPixel(){
     if (on){ scrollY = window.scrollY; Object.assign(b.style,{position:"fixed",top:(-scrollY)+"px",left:"0",right:"0",overflow:"hidden"}); }
     else { Object.assign(b.style,{position:"",top:"",left:"",right:"",overflow:""}); window.scrollTo(0, scrollY); }
   }
-  function abrir(){ ligaPixel(); voltaFoco = document.activeElement; modal.hidden = false; trava(true); if (matchMedia("(hover:hover)").matches) document.getElementById("nome").focus(); }
+  function abrir(){
+    if (GRUPO_WHATSAPP){ ligaPixel(); if (window.fbq && PIXEL_ID) fbq("track","Lead"); setTimeout(() => { location.href = GRUPO_WHATSAPP; }, window.fbq && PIXEL_ID ? 250 : 0); return; }
+    ligaPixel(); voltaFoco = document.activeElement; modal.hidden = false; trava(true); if (matchMedia("(hover:hover)").matches) document.getElementById("nome").focus(); }
   function fechar(){ if (modal.hidden) return; modal.hidden = true; trava(false); if (voltaFoco && voltaFoco.focus) voltaFoco.focus(); }
   document.querySelectorAll(".abrir").forEach(b => b.addEventListener("click", abrir));
   modal.addEventListener("click", e => { if (e.target.closest("[data-fechar]")) fechar(); });
