@@ -35,7 +35,10 @@
     --ease:cubic-bezier(.22,.7,.2,1);
   }
   *,*::before,*::after{box-sizing:border-box}
-  html{background:var(--bg);-webkit-text-size-adjust:100%}
+  html{background:var(--bg);-webkit-text-size-adjust:100%;text-size-adjust:100%}
+  html,body{overflow-x:hidden}
+  @supports (overflow:clip){html,body{overflow-x:clip}}
+  button,a{touch-action:manipulation}
   body{margin:0;background:var(--bg);color:var(--txt);font:400 16px/1.5 var(--f);-webkit-font-smoothing:antialiased;overflow-x:hidden}
   img{max-width:100%;height:auto;display:block}
   h1,h2,h3,p,ul{margin:0}
@@ -262,7 +265,8 @@
   @media (max-width:767px){
     .btn{width:100%;font-size:14px;padding:16px 18px;gap:8px}
     .btn-wrap{display:block;width:100%}
-    .cur{left:72%}
+    .cur{left:auto;right:22%;animation-name:cur-m}
+    @keyframes cur-m{0%{transform:translate(-50px,46px);opacity:0}12%{opacity:1}38%{transform:translate(0,0)}44%{transform:translate(0,0) scale(.86)}50%{transform:translate(0,0) scale(1)}72%{transform:translate(0,0);opacity:1}90%,100%{transform:translate(-50px,46px);opacity:0}}
     .recebe{padding:64px 0 72px}
     .c{padding:0 20px}
     .mural{grid-template-columns:repeat(3,1fr);gap:10px}
