@@ -1,0 +1,64 @@
+PÁGINA BLACK FRIDAY SOUTO · SUPER LIVE SEXTA 27/11 · 20H
+=========================================================
+
+ARQUIVOS DESTE ZIP
+- index.html .............. página de captura (com formulário: nome, WhatsApp, e-mail)
+- obrigado.html ........... página de obrigado (botão para entrar no grupo)
+- config.js ............... ÚNICO arquivo para configurar (link do grupo, planilha e pixel)
+- apps-script-planilha.gs . código que grava os leads na planilha do Google
+
+As pastas img/ e fonts/ continuam as mesmas da versão anterior.
+Mantenha-as no servidor, ao lado destes arquivos (não foram alteradas).
+
+---------------------------------------------------------
+1) CONFIGURAR (config.js)
+---------------------------------------------------------
+GRUPO_WHATSAPP = link do grupo (https://chat.whatsapp.com/...)
+PLANILHA_URL   = URL do Apps Script (passo 2), termina em /exec
+PIXEL_ID       = ID do Pixel da Meta (só números)
+
+---------------------------------------------------------
+2) LIGAR O FORMULÁRIO NA PLANILHA (5 minutos)
+---------------------------------------------------------
+a) Abra a planilha "Leads · Black Friday Souto 27/11" logado na conta
+   diretor@institutosoutobr.org.
+b) Menu Extensões > Apps Script.
+c) Apague o que estiver lá e cole todo o conteúdo de apps-script-planilha.gs. Salve.
+d) Clique em Implantar > Nova implantação > tipo "App da Web".
+   - Executar como: Eu (diretor@institutosoutobr.org)
+   - Quem pode acessar: Qualquer pessoa
+e) Autorize o acesso quando o Google pedir.
+f) Copie a URL do app da Web (termina em /exec) e cole em PLANILHA_URL no config.js.
+g) Teste: abra a página com ?teste=1 no final (não dispara o pixel),
+   faça um cadastro e confira se a linha apareceu na aba "Leads".
+
+Importante: se alterar o código do Apps Script depois, use
+Implantar > Gerenciar implantações > editar > Nova versão (a URL continua a mesma).
+
+---------------------------------------------------------
+3) O QUE MUDOU NESTA VERSÃO
+---------------------------------------------------------
+- Nova copy: live na SEXTA 27/11 às 20h, título novo, texto de apoio novo.
+- Formulário (nome, WhatsApp com máscara e DDD, e-mail) com validação,
+  correção automática de erros comuns no e-mail (gmail.con -> gmail.com)
+  e envio das UTMs dos anúncios para a planilha.
+- WhatsApp vai para a planilha no formato 5521999999999 (pronto para CRM/disparo).
+- Página de obrigado com o nome da pessoa, "Passo 2 de 2" e botão do grupo.
+- Pixel: o evento Lead dispara na página de obrigado (só uma vez por cadastro);
+  clique no botão do grupo dispara o evento personalizado "EntrouNoGrupo".
+- Página com uma seção só: foto, título, texto e formulário (seções dos cursos e do professor removidas; a pasta video/ não é mais usada).
+
+OTIMIZAÇÃO
+- Removido CSS sem uso (cerca de 30 regras de seções que não existem mais).
+- Removido o bloco SVG duplicado (IDs repetidos #wa, #seta e #gw).
+- Removida a fonte Light, que não era usada (1 download a menos).
+- Corrigido o preload da foto principal (o tamanho estava diferente do <img>,
+  o que podia baixar a foto duas vezes).
+- Imagens abaixo da dobra com loading="lazy" e decoding="async".
+- Pixel continua carregando só na primeira interação (PageSpeed alto).
+
+PENDENTE ANTES DE PUBLICAR
+- Definir o brinde (ex.: plano de estudos, mapa mental, lista de questões)
+  e configurar o e-mail automático que entrega o brinde + link da live.
+- Foto do topo (img/ismael-*.webp): se quiser manter a surpresa, trocar pela
+  versão sem os brasões (mesmos nomes de arquivo e tamanhos).

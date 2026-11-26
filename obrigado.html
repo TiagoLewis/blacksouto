@@ -1,0 +1,94 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Falta só um passo · Black Friday Souto</title>
+<meta name="robots" content="noindex">
+<meta name="theme-color" content="#0d0f12">
+<link rel="icon" href="img/favicon-48.png" sizes="48x48" type="image/png">
+<link rel="preload" href="fonts/InterDisplay-ExtraBold.woff" as="font" type="font/woff" crossorigin>
+<style>
+  @font-face{font-family:"Inter Display";src:url(fonts/InterDisplay-Regular.woff) format("woff");font-weight:400;font-display:swap}
+  @font-face{font-family:"Inter Display";src:url(fonts/InterDisplay-SemiBold.woff) format("woff");font-weight:600;font-display:swap}
+  @font-face{font-family:"Inter Display";src:url(fonts/InterDisplay-ExtraBold.woff) format("woff");font-weight:700 800;font-display:swap}
+  :root{--bg:#0d0f12;--txt:#f1f2f4;--txt2:#c6cbd2;--txt3:#8f97a3;--gold:#ffc64a;--f:"Inter Display","Helvetica Neue",Arial,sans-serif;--ease:cubic-bezier(.22,.7,.2,1)}
+  *,*::before,*::after{box-sizing:border-box}
+  html,body{margin:0;min-height:100%;background:var(--bg)}
+  body{display:flex;flex-direction:column;min-height:100vh;min-height:100dvh;color:var(--txt);font:400 16px/1.5 var(--f);-webkit-font-smoothing:antialiased;
+    background:radial-gradient(ellipse 70% 50% at 50% 0%,rgba(255,198,74,.12),transparent 70%),var(--bg)}
+  img{display:block;max-width:100%;height:auto}
+  p,h1{margin:0}
+  :focus-visible{outline:2px solid var(--gold);outline-offset:3px}
+  header{display:flex;justify-content:center;padding:22px 20px 0}
+  .logo{width:110px}
+  main{flex:1;display:flex;align-items:center;justify-content:center;padding:28px 20px 40px}
+  .card{width:100%;max-width:560px;padding:34px 30px 30px;border:1px solid rgba(255,198,74,.28);border-radius:18px;text-align:center;
+    background:linear-gradient(180deg,rgba(28,24,18,.85),rgba(15,14,11,.92));box-shadow:0 30px 80px rgba(0,0,0,.5),0 0 80px rgba(255,198,74,.07);animation:entra .7s var(--ease) both}
+  @keyframes entra{from{opacity:0;transform:translateY(14px)}to{opacity:1;transform:none}}
+  .passos{display:flex;align-items:center;gap:10px;margin:0 auto 24px;max-width:320px}
+  .passos span{flex:1;height:6px;border-radius:99px;background:rgba(255,255,255,.1);overflow:hidden}
+  .passos span:first-child{background:#25d366}
+  .passos span:last-child::after{content:"";display:block;width:50%;height:100%;background:var(--gold);animation:enche 1.8s ease-in-out infinite alternate}
+  @keyframes enche{to{width:85%}}
+  .passos small{flex:none;font:600 11px/1 var(--f);letter-spacing:.16em;text-transform:uppercase;color:var(--txt3)}
+  .ok{display:grid;place-items:center;width:64px;height:64px;margin:0 auto 16px;border-radius:50%;background:rgba(37,211,102,.12);border:1px solid rgba(37,211,102,.4);font-size:30px}
+  h1{font:800 clamp(26px,5.6vw,34px)/1.1 var(--f);letter-spacing:-.035em;text-wrap:balance}
+  h1 .g{display:block;margin-top:.2em;color:var(--gold)}
+  .txt{margin-top:14px;font-size:17px;line-height:1.55;color:var(--txt2);text-wrap:pretty}
+  .txt b{color:var(--txt);font-weight:600}
+  .btn-wrap{position:relative;display:block;margin-top:26px}
+  .btn{position:relative;display:flex;align-items:center;justify-content:center;gap:10px;width:100%;min-height:60px;padding:18px 22px;border-radius:8px;text-decoration:none;
+    background:linear-gradient(100deg,#2fe073 0%,#25d366 45%,#14a952 100%);color:#fff;text-shadow:0 1px 1px rgba(0,60,20,.25);
+    font:600 16px/1.2 var(--f);letter-spacing:.03em;text-transform:uppercase;box-shadow:0 10px 28px -12px rgba(37,211,102,.6);
+    animation:press 4.6s var(--ease) infinite,brilho 2.6s ease-in-out infinite;transition:transform .35s var(--ease),filter .35s}
+  .btn:hover{filter:brightness(1.05)}
+  .btn::after{content:"";position:absolute;inset:0;border-radius:inherit;pointer-events:none;animation:pisca 2.6s ease-out infinite}
+  .btn svg{flex:none}
+  @keyframes pisca{0%{box-shadow:0 0 0 0 rgba(37,211,102,.5)}70%,100%{box-shadow:0 0 0 12px rgba(37,211,102,0)}}
+  @keyframes brilho{50%{filter:brightness(1.08) saturate(1.05)}}
+  @keyframes press{0%,42%,52%,100%{transform:none}46%{transform:scale(.975)}}
+  .cur{position:absolute;right:18%;top:62%;z-index:3;display:flex;align-items:flex-start;gap:2px;pointer-events:none;animation:cur 4.6s var(--ease) infinite}
+  .cur b{margin-top:15px;font:600 11px/1.3 var(--f);color:#fff;background:#ff6a1a;padding:3px 9px;border-radius:99px 99px 99px 4px;white-space:nowrap}
+  @keyframes cur{0%{transform:translate(-50px,46px);opacity:0}12%{opacity:1}38%{transform:translate(0,0)}44%{transform:translate(0,0) scale(.86)}50%{transform:translate(0,0) scale(1)}72%{transform:translate(0,0);opacity:1}90%,100%{transform:translate(-50px,46px);opacity:0}}
+  .email{display:flex;gap:12px;align-items:flex-start;margin-top:24px;padding:14px 16px;border-radius:10px;background:rgba(255,198,74,.07);border:1px dashed rgba(255,198,74,.25);text-align:left;font-size:14.5px;line-height:1.5;color:var(--txt2)}
+  .email .ic{flex:none;font-size:20px;line-height:1.2}
+  footer{padding:20px;text-align:center;font-size:12px;color:var(--txt3)}
+  @media (prefers-reduced-motion:reduce){*,*::before,*::after{animation:none!important;transition:none!important}.cur{display:none}}
+  @media (max-width:520px){.card{padding:28px 18px 22px}.btn{font-size:14.5px}.txt{font-size:16px}}
+</style>
+</head>
+<body>
+<header><img class="logo" src="img/black-friday-240.webp" srcset="img/black-friday-240.webp 240w, img/black-friday-360.webp 360w" sizes="110px" width="240" height="89" alt="Black Friday Instituto Souto"></header>
+<main>
+  <div class="card">
+    <div class="passos" aria-label="Passo 2 de 2"><span></span><span></span><small>Passo 2 de 2</small></div>
+    <div class="ok" aria-hidden="true">✅</div>
+    <h1><span id="titulo">Cadastro feito!</span> <span class="g">Falta só um passo.</span></h1>
+    <p class="txt">Entre no grupo da Black Friday pelo botão abaixo. É lá que <b>a oferta e o cupom vão ser revelados na sexta, às 20h.</b></p>
+    <div class="btn-wrap"><a class="btn" id="entrar" href="#" rel="noopener"><svg width="22" height="22" viewBox="0 0 24 24" aria-hidden="true"><path fill="#fff" d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38c1.45.79 3.08 1.21 4.74 1.21 5.46 0 9.91-4.45 9.91-9.91C21.95 6.45 17.5 2 12.04 2zm5.8 14.05c-.24.68-1.42 1.3-1.95 1.35-.5.05-.97.23-3.27-.68-2.77-1.09-4.52-3.92-4.66-4.1-.13-.18-1.11-1.48-1.11-2.82 0-1.34.7-2 .95-2.27.25-.27.54-.34.72-.34h.52c.17 0 .39-.06.61.47.24.56.8 1.94.87 2.08.07.14.12.3.02.48-.09.18-.14.3-.27.46-.14.16-.29.36-.41.48-.14.14-.28.29-.12.56.16.27.71 1.17 1.53 1.9 1.05.94 1.94 1.23 2.21 1.37.27.14.43.12.59-.07.16-.18.68-.79.86-1.07.18-.27.36-.23.61-.14.25.09 1.59.75 1.86.89.27.14.45.2.52.32.07.11.07.66-.17 1.35z"/></svg>Entrar no grupo da Black</a><span class="cur" aria-hidden="true"><svg width="20" height="20" viewBox="0 0 24 24"><path d="M3.5 2.8 20 10.2l-7.1 2.2-2.7 7.3z" fill="#ff6a1a" stroke="#fff" stroke-width="1.6" stroke-linejoin="round"/></svg><b>Você</b></span></div>
+    <p class="email"><span class="ic" aria-hidden="true">📩</span><span>Seu brinde vai chegar no seu e-mail. Se não estiver na caixa de entrada, confira o spam ou a aba Promoções.</span></p>
+  </div>
+</main>
+<footer>© <span id="ano">2026</span> INSTITUTO SOUTO</footer>
+<script src="config.js"></script>
+<script>
+document.getElementById("ano").textContent = new Date().getFullYear();
+let nome = "", veioDoForm = false;
+try { nome = sessionStorage.getItem("bf_nome") || ""; veioDoForm = sessionStorage.getItem("bf_lead") === "1"; sessionStorage.removeItem("bf_lead"); } catch(_){}
+if (nome) document.getElementById("titulo").textContent = "Cadastro feito, " + nome + "!";
+const entrar = document.getElementById("entrar");
+if (GRUPO_WHATSAPP) entrar.href = GRUPO_WHATSAPP;
+/* pixel: Lead só para quem acabou de se cadastrar (não duplica ao recarregar) */
+if (PIXEL_ID && !/[?&]teste=1(&|#|$)/.test(location.search)){
+  !function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];t=b.createElement(e);t.async=!0;t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}(window,document,'script','https://connect.facebook.net/en_US/fbevents.js');
+  fbq('init', PIXEL_ID); fbq('track', 'PageView');
+  if (veioDoForm) fbq('track', 'Lead');
+}
+entrar.addEventListener("click", e => {
+  if (!GRUPO_WHATSAPP){ e.preventDefault(); return; }
+  if (window.fbq) fbq('trackCustom', 'EntrouNoGrupo');
+});
+</script>
+</body>
+</html>
