@@ -176,7 +176,16 @@
     <symbol id="seta" viewBox="0 0 24 24"><path d="M3.5 2.8 20 10.2l-7.1 2.2-2.7 7.3z" fill="#ff6a1a" stroke="#fff" stroke-width="1.6" stroke-linejoin="round"/></symbol>
   </defs>
 </svg>
-<script src="config.js"></script>
+<script>
+/* ===================== CONFIGURAÇÃO: só mexa aqui ===================== */
+// 1) URL do Apps Script da planilha (termina em /exec). Passo a passo no LEIA-ME.txt
+var PLANILHA_URL = "https://script.google.com/macros/s/AKfycbynwiE-4RgRI4TE1DGwAQkB74lYZKHyVlwhJdJsCuF8kqH-q8NDMArSEnBmEKb7Ce6f3g/exec";
+// 2) Página de obrigado (deixe "obrigado.html" se ela estiver na mesma pasta desta página)
+var OBRIGADO_URL = "obrigado.html";
+// 3) ID do Pixel da Meta (só números). Vazio = sem pixel.
+var PIXEL_ID = "";
+/* ===================================================================== */
+</script>
 <script>
 document.getElementById("ano").textContent = new Date().getFullYear();
 /* ---------- pixel (carrega só na 1ª interação: PageSpeed alto) ---------- */
@@ -227,6 +236,8 @@ const form = document.getElementById("cadastro");
     Object.keys(regras).forEach(k => { if (!checa(k, true) && !primeiro) primeiro = form[k]; });
     if (primeiro){ primeiro.focus(); return; }
     btn.disabled = true; form.classList.add("is-sending"); btnTxt.textContent = "Enviando...";
+    const vaiProObrigado = () => { location.href = (OBRIGADO_URL || "obrigado.html") + location.search; };
+    setTimeout(vaiProObrigado, 6000); // garantia: nunca fica parado no botão
     const nome = form.nome.value.trim().replace(/\s+/g," ");
     const dados = new URLSearchParams({
       nome, whatsapp: "55"+soDig(zap.value), email: corrige(email.value),
@@ -237,8 +248,8 @@ const form = document.getElementById("cadastro");
     try { sessionStorage.setItem("bf_nome", nome.split(" ")[0]); sessionStorage.setItem("bf_lead","1"); } catch(_){}
     if (PLANILHA_URL){
       try { await Promise.race([fetch(PLANILHA_URL, {method:"POST", mode:"no-cors", body:dados, keepalive:true}), new Promise(r => setTimeout(r, 4000))]); } catch(_){}
-    } else console.warn("PLANILHA_URL vazio em config.js: o lead não foi salvo.");
-    location.href = "obrigado.html" + location.search;
+    } else console.warn("PLANILHA_URL vazio: o lead não foi salvo na planilha.");
+    vaiProObrigado();
   });
 })();
 </script>
